@@ -1,0 +1,210 @@
+version: "3.1"
+
+nlu:
+
+- intent: chao_hoi 
+  examples: |
+    - chào
+    - xin chào
+    - chào bạn
+    - hi
+
+- intent: cho_biet_ten 
+  examples: |
+    - Tôi tên là [Đạt](name)
+    - Tên tôi là [Nguyễn](name)
+    - Tôi là [Trần](name)
+    - Em là [Thảo](name)
+    - [Lê](name) là tên của tôi
+    - Mình là [Quân](name) 
+
+- intent: tam_biet 
+  examples: |
+    - tạm biệt
+    - chào nhé
+    - hẹn gặp lại
+    - hẹn gặp lại sau
+
+- intent: Quy_trinh-Thu_tuc_BHYT
+  examples: |
+    - Tôi muốn hỏi về Bảo hiểm Y tế tại Bệnh viện?
+
+- intent: Quy_trinh-BHYT_trai_tuyen
+  examples: |
+    - Bệnh viện có nhận bảo hiểm trái tuyến không?
+
+- intent: Quy_trinh-Hien_tang
+  examples: |
+    - Mình muốn hiến tạng/hiến xác cho y học thì đăng ký như thế nào ạ?
+
+- intent: Tu_van_dich_vu-Trung_tam_U_Mau_co_so_3
+  examples: |
+    - Bé nhỏ muốn điều trị u máu? 
+
+- intent: Quy_trinh-Xe_cuu_thuong
+  examples: |
+    - Làm thế nào để liên hệ và sử dụng dịch vụ vận chuyển cấp cứu của Bệnh viện Đại học Y Dược TPHCM?
+
+- intent: Mua_sach-Mua_Sieu_am_atlas
+  examples: |
+    - Mình muốn mua cuốn Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương thì mua ở đâu ạ?
+
+- intent: Tu_van_dich_vu-Huong_dan_su_dung_thuoc
+  examples: |
+    - Con mình đi khám về và đưa đơn thuốc, mình muốn cho con uống nhưng không hiểu rõ đơn cần gặp Bác sĩ hỏi phải làm sao?
+
+- intent: Tu_van_dich_vu-CMEs
+  examples: |
+    - Mình muốn đăng ký học lớp căng chỉ thì phải làm sao? Bệnh viện có nhận đăng ký thực hành 18 tháng không?
+
+- intent: Quy_trinh-Quy_trinh_kham_chua_benh
+  examples: |
+    - Quy trình đặt hẹn khám bệnh như thế nào? 
+
+- intent: Chi_phi-Chi_phi_va_phi_dich_vu_y_te_va_cham_soc_suc_khoe
+  examples: |
+    - Tôi muốn biết chi phí khám chuyên khoa tại Bệnh viện là bao nhiêu?
+
+- intent: Quy_trinh-Kham_suc_khoe_tong_quat_va_dinh_ky
+  examples: |
+    - Tôi muốn biết chi phí các loại khám tổng quát tại Bệnh viện là bao nhiêu?
+
+- intent: Tu_van_dich_vu-Tu_van_tiem_chung_va_phong_ngua_benh
+  examples: |
+    - Bạn cho biết chi phí tiêm vaccine HPV là bao nhiêu?
+
+- intent: Chi_phi-Bang_gia_va_danh_muc_dich_vu_tiem_chung_va_tiem_ngua
+  examples: |
+    - Xin cho tôi biết chi tiết về bảng giá tiêm chủng tại bệnh viện này?
+
+
+
+
+- intent: Tu_van_chuyen_khoa-Kham_Ung_buou
+  examples: |
+    - Làm thế nào để đăng ký khám tại phòng khám Ung bướu của Bệnh viện và đặt lịch trực tuyến?
+
+- intent: Tu_van_dich_vu-Noi_soi
+  examples: |
+    - Xin cho tôi biết chi tiết về bảng giá tiêm chủng tại bệnh viện này?
+
+- intent: Tu_van_dich_vu-Cat_thang_luoi_cho_be
+  examples: |
+    - Bé muốn cắt thắng lưỡi? 
+
+- intent: Tu_van_dich_vu-Chuyen_huong_kham_tong_quat_hoac_theo_trieu_chung_do_phong_kham_hau_COVID_da_ngung_hoat_dong
+  examples: |
+    -  Khám hậu Covid khám phòng khám nào? 
+
+- intent: Tu_van_dich_vu-Mat_le
+  examples: |
+    - Bệnh viện Đại học Y Dược TPHCM có điều trị mắt lé không? 
+
+- intent: Tu_van_dich_vu-HIV
+  examples: |
+    - Bệnh viện có xét nghiệm HIV không? 
+
+- intent: Tu_van_dich_vu-Di_ung
+  examples: |
+    - Xét nghiệm tìm ra dị ứng  
+
+- intent: Quy_trinh-Noi_soi
+  examples: |
+    - Truớc khi nội sôi dạ dày cần nhịn ăn bao lâu ạ 
+
+- intent: Quy_trinh-Toa_thuoc
+  examples: |
+    - Tôi không tái khám được, có thể nhờ người thân mua thuốc theo toa thuốc cũ không?
+
+- intent: Tu_van_dich_vu-Thay_toa_thuoc_phu_hop_co_dia
+  examples: |
+    - Mình uống thuốc đơn Bác sĩ kê bị chóng mặt và mệt. Cho hỏi có thể thay bằng thuốc gì?
+
+- intent: Tu_van_dich_vu-Dieu_tri_noi_tru
+  examples: |
+    - Mình muốn nhập viện mổ thay khớp thì làm sao?
+
+- intent: Tu_van_dich_vu-Tu_van_chuyen_khoa
+  examples: |
+    - Xem thông tin bệnh
+
+- intent: Tu_van_dich_vu-Tu_van_goi_sinh
+  examples: |
+    - Bệnh viện có những gói sinh nào?
+
+- intent: Tu_van_dich_vu-Tu_van_dich_vu_sinh
+  examples: |
+    - Mình có nhu cầu sính mổ chủ động BV có thể tư vấn dùm mình
+
+- intent: Tu_van_dich_vu-Dich_vu_pha_thai
+  examples: |
+    - Cho hỏi Bệnh viện có phá thai không?
+
+- intent: Mua_sach-Mua_so_tay_Can_thiep_cham_soc_dieu_duong_
+  examples: |
+    - Mình muốn mua cuốn Can thiệp chăm sóc điều dưỡng của BV
+
+- intent: Quy_trinh-Kham_tai_Phong_kham_Quoc_te
+  examples: |
+    - BV cho mình hỏi có khám dịch vụ không?
+
+- intent: Chi_phi-Hoan_tien_dich_vu_can_lam_sang,_va_cac_dich_vu_dat_kham
+  examples: |
+    - Cho hỏi mình cọc tiền nội soi rồi giờ không muốn nữa có hoàn tiền lại không ạ?
+
+- intent: Chi_phi-Doi/Huy_ngay_kham
+  examples: |
+    - Làm thế nào để đổi lịch khám và nhận hoàn tiền tại Bệnh viện?
+
+- intent: Quy_trinh-Phat_hanh_hoa_don
+  examples: |
+    - Mình muốn xin hóa đơn để nộp cho bảo hiểm, nhưng tới giờ chưa nhận được thì làm sao?
+
+- intent: Tu_van_dich_vu-Tra_cuu_hoa_don
+  examples: |
+    - Muốn tra cứu hóa đơn thì vào đâu?
+
+- intent: Quy_trinh-Lich_kham_cua_Benh_vien
+  examples: |
+    - Cho mình hỏi Bệnh viện có khám ngoài giờ, hay Thứ 7, Chủ Nhật không?
+
+- intent: Tu_van_dich_vu-Giao_thuoc_tai_nha
+  examples: |
+    - Bệnh viện có dịch vụ giao thuốc tại nhà không? 
+
+- intent: Tu_van_dich_vu-Kham_online
+  examples: |
+    - Bệnh viện có dịch vụ khám bệnh trực tuyến hay tại nhà không? 
+
+- intent: Quy_trinh-Gio_tham_benh
+  examples: |
+    - Giờ thăm bệnh khoa Chấn thương chỉnh hình từ mấy giờ?
+
+- intent: Tu_van_dich_vu-Dia_chi
+  examples: |
+    - Bệnh viện có bao nhiêu cơ sở?
+
+- intent: Tu_van_dich_vu-Co_so_vat_chat
+  examples: |
+    - Mình muốn xem các loại giường thì xem ở đâu?
+
+- intent: Tu_van_dich_vu-Thong_tin_suc_khoe
+  examples: |
+    - Xem thông tin sức khỏe hữu ích?
+
+- intent: Tu_van_dich_vu-Dang_ky_kham_benh
+  examples: |
+    - Đăng ký khám bệnh?
+
+- intent: Tu_van_dich_vu-Lich_kham__
+  examples: |
+    - Lịch khám của Bệnh viện và Bác sĩ?
+
+- intent: Tu_van_dich_vu-Cong_dong_nguoi_benh
+  examples: |
+    - Bệnh viện có các cộng đồng người bệnh nào?
+
+- intent: Tu_van_dich_vu-Su_kien_Benh_vien
+  examples: |
+    - Làm thế nào để tham gia các chương trình trực tiếp, hội thảo nhận quà và nghỉ phép?
+

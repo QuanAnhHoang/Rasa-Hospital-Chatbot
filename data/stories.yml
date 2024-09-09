@@ -1,0 +1,244 @@
+version: "3.1"
+
+stories:
+
+- story: chao_hoi path 
+  steps:
+  - intent: chao_hoi 
+  - action: utter_chao_hoi 
+
+- story: chao_hoi_va_cho_biet_ten path 
+  steps:
+  - intent: cho_biet_ten
+  - action: utter_chao_hoi_voi_ten 
+
+- story: tam_biet path 
+  steps:
+  - intent: tam_biet 
+  - action: utter_tam_biet 
+
+- story: Tu_van_dich_vu-Di_ung path
+  steps:
+  - intent: Tu_van_dich_vu-Di_ung
+  - action: utter_Tu_van_dich_vu-Di_ung
+
+- story: Quy_trinh-Noi_soi path
+  steps:
+  - intent: Quy_trinh-Noi_soi
+  - action: utter_Quy_trinh-Noi_soi
+
+- story: Quy_trinh-Lich_kham_cua_Benh_vien path
+  steps:
+  - intent: Quy_trinh-Lich_kham_cua_Benh_vien
+  - action: utter_Quy_trinh-Lich_kham_cua_Benh_vien
+
+- story: Tu_van_dich_vu-Tu_van_dich_vu_sinh path
+  steps:
+  - intent: Tu_van_dich_vu-Tu_van_dich_vu_sinh
+  - action: utter_Tu_van_dich_vu-Tu_van_dich_vu_sinh
+
+- story: Quy_trinh-Quy_trinh_kham_chua_benh path
+  steps:
+  - intent: Quy_trinh-Quy_trinh_kham_chua_benh
+  - action: utter_Quy_trinh-Quy_trinh_kham_chua_benh
+
+- story: Tu_van_dich_vu-Noi_soi path
+  steps:
+  - intent: Tu_van_dich_vu-Noi_soi
+  - action: utter_Tu_van_dich_vu-Noi_soi
+
+- story: Tu_van_dich_vu-Lich_kham__ path
+  steps:
+  - intent: Tu_van_dich_vu-Lich_kham__
+  - action: utter_Tu_van_dich_vu-Lich_kham__
+
+- story: Tu_van_dich_vu-Giao_thuoc_tai_nha path
+  steps:
+  - intent: Tu_van_dich_vu-Giao_thuoc_tai_nha
+  - action: utter_Tu_van_dich_vu-Giao_thuoc_tai_nha
+
+- story: Tu_van_chuyen_khoa-Kham_Ung_buou path
+  steps:
+  - intent: Tu_van_chuyen_khoa-Kham_Ung_buou
+  - action: utter_Tu_van_chuyen_khoa-Kham_Ung_buou
+
+- story: Quy_trinh-Kham_suc_khoe_tong_quat_va_dinh_ky path
+  steps:
+  - intent: Quy_trinh-Kham_suc_khoe_tong_quat_va_dinh_ky
+  - action: utter_Quy_trinh-Kham_suc_khoe_tong_quat_va_dinh_ky
+
+- story: Quy_trinh-Gio_tham_benh path
+  steps:
+  - intent: Quy_trinh-Gio_tham_benh
+  - action: utter_Quy_trinh-Gio_tham_benh
+
+- story: Tu_van_dich_vu-Tu_van_tiem_chung_va_phong_ngua_benh path
+  steps:
+  - intent: Tu_van_dich_vu-Tu_van_tiem_chung_va_phong_ngua_benh
+  - action: utter_Tu_van_dich_vu-Tu_van_tiem_chung_va_phong_ngua_benh
+
+- story: Tu_van_dich_vu-Tra_cuu_hoa_don path
+  steps:
+  - intent: Tu_van_dich_vu-Tra_cuu_hoa_don
+  - action: utter_Tu_van_dich_vu-Tra_cuu_hoa_don
+
+- story: Tu_van_dich_vu-Chuyen_huong_kham_tong_quat_hoac_theo_trieu_chung_do_phong_kham_hau_COVID_da_ngung_hoat_dong path
+  steps:
+  - intent: Tu_van_dich_vu-Chuyen_huong_kham_tong_quat_hoac_theo_trieu_chung_do_phong_kham_hau_COVID_da_ngung_hoat_dong
+  - action: utter_Tu_van_dich_vu-Chuyen_huong_kham_tong_quat_hoac_theo_trieu_chung_do_phong_kham_hau_COVID_da_ngung_hoat_dong
+
+- story: Tu_van_dich_vu-Cong_dong_nguoi_benh path
+  steps:
+  - intent: Tu_van_dich_vu-Cong_dong_nguoi_benh
+  - action: utter_Tu_van_dich_vu-Cong_dong_nguoi_benh
+
+- story: Tu_van_dich_vu-Tu_van_chuyen_khoa path
+  steps:
+  - intent: Tu_van_dich_vu-Tu_van_chuyen_khoa
+  - action: utter_Tu_van_dich_vu-Tu_van_chuyen_khoa
+
+- story: Chi_phi-Chi_phi_va_phi_dich_vu_y_te_va_cham_soc_suc_khoe path
+  steps:
+  - intent: Chi_phi-Chi_phi_va_phi_dich_vu_y_te_va_cham_soc_suc_khoe
+  - action: utter_Chi_phi-Chi_phi_va_phi_dich_vu_y_te_va_cham_soc_suc_khoe
+
+- story: Tu_van_dich_vu-Trung_tam_U_Mau_co_so_3 path
+  steps:
+  - intent: Tu_van_dich_vu-Trung_tam_U_Mau_co_so_3
+  - action: utter_Tu_van_dich_vu-Trung_tam_U_Mau_co_so_3
+
+- story: Quy_trinh-Thu_tuc_BHYT path
+  steps:
+  - intent: Quy_trinh-Thu_tuc_BHYT
+  - action: utter_Quy_trinh-Thu_tuc_BHYT
+
+- story: Mua_sach-Mua_Sieu_am_atlas path
+  steps:
+  - intent: Mua_sach-Mua_Sieu_am_atlas
+  - action: utter_Mua_sach-Mua_Sieu_am_atlas
+
+- story: Chi_phi-Hoan_tien_dich_vu_can_lam_sang,_va_cac_dich_vu_dat_kham path
+  steps:
+  - intent: Chi_phi-Hoan_tien_dich_vu_can_lam_sang,_va_cac_dich_vu_dat_kham
+  - action: utter_Chi_phi-Hoan_tien_dich_vu_can_lam_sang,_va_cac_dich_vu_dat_kham
+
+- story: Tu_van_dich_vu-Dang_ky_kham_benh path
+  steps:
+  - intent: Tu_van_dich_vu-Dang_ky_kham_benh
+  - action: utter_Tu_van_dich_vu-Dang_ky_kham_benh
+
+- story: Tu_van_dich_vu-Huong_dan_su_dung_thuoc path
+  steps:
+  - intent: Tu_van_dich_vu-Huong_dan_su_dung_thuoc
+  - action: utter_Tu_van_dich_vu-Huong_dan_su_dung_thuoc
+
+- story: Tu_van_dich_vu-Dieu_tri_noi_tru path
+  steps:
+  - intent: Tu_van_dich_vu-Dieu_tri_noi_tru
+  - action: utter_Tu_van_dich_vu-Dieu_tri_noi_tru
+
+- story: Quy_trinh-Hien_tang path
+  steps:
+  - intent: Quy_trinh-Hien_tang
+  - action: utter_Quy_trinh-Hien_tang
+
+- story: Quy_trinh-BHYT_trai_tuyen path
+  steps:
+  - intent: Quy_trinh-BHYT_trai_tuyen
+  - action: utter_Quy_trinh-BHYT_trai_tuyen
+
+- story: Tu_van_dich_vu-Kham_online path
+  steps:
+  - intent: Tu_van_dich_vu-Kham_online
+  - action: utter_Tu_van_dich_vu-Kham_online
+
+- story: Tu_van_dich_vu-Dia_chi path
+  steps:
+  - intent: Tu_van_dich_vu-Dia_chi
+  - action: utter_Tu_van_dich_vu-Dia_chi
+
+- story: Tu_van_dich_vu-Cat_thang_luoi_cho_be path
+  steps:
+  - intent: Tu_van_dich_vu-Cat_thang_luoi_cho_be
+  - action: utter_Tu_van_dich_vu-Cat_thang_luoi_cho_be
+
+- story: Tu_van_dich_vu-CMEs path
+  steps:
+  - intent: Tu_van_dich_vu-CMEs
+  - action: utter_Tu_van_dich_vu-CMEs
+
+- story: Tu_van_dich_vu-HIV path
+  steps:
+  - intent: Tu_van_dich_vu-HIV
+  - action: utter_Tu_van_dich_vu-HIV
+
+- story: Chi_phi-Doi/Huy_ngay_kham path
+  steps:
+  - intent: Chi_phi-Doi/Huy_ngay_kham
+  - action: utter_Chi_phi-Doi/Huy_ngay_kham
+
+- story: Tu_van_dich_vu-Thong_tin_suc_khoe path
+  steps:
+  - intent: Tu_van_dich_vu-Thong_tin_suc_khoe
+  - action: utter_Tu_van_dich_vu-Thong_tin_suc_khoe
+
+- story: Quy_trinh-Xe_cuu_thuong path
+  steps:
+  - intent: Quy_trinh-Xe_cuu_thuong
+  - action: utter_Quy_trinh-Xe_cuu_thuong
+
+- story: Tu_van_dich_vu-Mat_le path
+  steps:
+  - intent: Tu_van_dich_vu-Mat_le
+  - action: utter_Tu_van_dich_vu-Mat_le
+
+- story: Quy_trinh-Toa_thuoc path
+  steps:
+  - intent: Quy_trinh-Toa_thuoc
+  - action: utter_Quy_trinh-Toa_thuoc
+
+- story: Quy_trinh-Phat_hanh_hoa_don path
+  steps:
+  - intent: Quy_trinh-Phat_hanh_hoa_don
+  - action: utter_Quy_trinh-Phat_hanh_hoa_don
+
+- story: Tu_van_dich_vu-Dich_vu_pha_thai path
+  steps:
+  - intent: Tu_van_dich_vu-Dich_vu_pha_thai
+  - action: utter_Tu_van_dich_vu-Dich_vu_pha_thai
+
+- story: Mua_sach-Mua_so_tay_Can_thiep_cham_soc_dieu_duong_ path
+  steps:
+  - intent: Mua_sach-Mua_so_tay_Can_thiep_cham_soc_dieu_duong_
+  - action: utter_Mua_sach-Mua_so_tay_Can_thiep_cham_soc_dieu_duong_
+
+- story: Tu_van_dich_vu-Co_so_vat_chat path
+  steps:
+  - intent: Tu_van_dich_vu-Co_so_vat_chat
+  - action: utter_Tu_van_dich_vu-Co_so_vat_chat
+
+- story: Chi_phi-Bang_gia_va_danh_muc_dich_vu_tiem_chung_va_tiem_ngua path
+  steps:
+  - intent: Chi_phi-Bang_gia_va_danh_muc_dich_vu_tiem_chung_va_tiem_ngua
+  - action: utter_Chi_phi-Bang_gia_va_danh_muc_dich_vu_tiem_chung_va_tiem_ngua
+
+- story: Tu_van_dich_vu-Thay_toa_thuoc_phu_hop_co_dia path
+  steps:
+  - intent: Tu_van_dich_vu-Thay_toa_thuoc_phu_hop_co_dia
+  - action: utter_Tu_van_dich_vu-Thay_toa_thuoc_phu_hop_co_dia
+
+- story: Tu_van_dich_vu-Tu_van_goi_sinh path
+  steps:
+  - intent: Tu_van_dich_vu-Tu_van_goi_sinh
+  - action: utter_Tu_van_dich_vu-Tu_van_goi_sinh
+
+- story: Tu_van_dich_vu-Su_kien_Benh_vien path
+  steps:
+  - intent: Tu_van_dich_vu-Su_kien_Benh_vien
+  - action: utter_Tu_van_dich_vu-Su_kien_Benh_vien
+
+- story: Quy_trinh-Kham_tai_Phong_kham_Quoc_te path
+  steps:
+  - intent: Quy_trinh-Kham_tai_Phong_kham_Quoc_te
+  - action: utter_Quy_trinh-Kham_tai_Phong_kham_Quoc_te
+

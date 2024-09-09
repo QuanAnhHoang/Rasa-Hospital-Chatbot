@@ -1,0 +1,210 @@
+version: "3.1"
+
+intents:
+  - chao_hoi 
+  - cho_biet_ten 
+  - tam_biet 
+  - Tu_van_dich_vu-Di_ung
+  - Quy_trinh-Noi_soi
+  - Quy_trinh-Lich_kham_cua_Benh_vien
+  - Tu_van_dich_vu-Tu_van_dich_vu_sinh
+  - Quy_trinh-Quy_trinh_kham_chua_benh
+  - Tu_van_dich_vu-Noi_soi
+  - Tu_van_dich_vu-Lich_kham__
+  - Tu_van_dich_vu-Giao_thuoc_tai_nha
+  - Tu_van_chuyen_khoa-Kham_Ung_buou
+  - Quy_trinh-Kham_suc_khoe_tong_quat_va_dinh_ky
+  - Quy_trinh-Gio_tham_benh
+  - Tu_van_dich_vu-Tu_van_tiem_chung_va_phong_ngua_benh
+  - Tu_van_dich_vu-Tra_cuu_hoa_don
+  - Tu_van_dich_vu-Chuyen_huong_kham_tong_quat_hoac_theo_trieu_chung_do_phong_kham_hau_COVID_da_ngung_hoat_dong
+  - Tu_van_dich_vu-Cong_dong_nguoi_benh
+  - Tu_van_dich_vu-Tu_van_chuyen_khoa
+  - Chi_phi-Chi_phi_va_phi_dich_vu_y_te_va_cham_soc_suc_khoe
+  - Tu_van_dich_vu-Trung_tam_U_Mau_co_so_3
+  - Quy_trinh-Thu_tuc_BHYT
+  - Mua_sach-Mua_Sieu_am_atlas
+  - Chi_phi-Hoan_tien_dich_vu_can_lam_sang,_va_cac_dich_vu_dat_kham
+  - Tu_van_dich_vu-Dang_ky_kham_benh
+  - Tu_van_dich_vu-Huong_dan_su_dung_thuoc
+  - Tu_van_dich_vu-Dieu_tri_noi_tru
+  - Quy_trinh-Hien_tang
+  - Quy_trinh-BHYT_trai_tuyen
+  - Tu_van_dich_vu-Kham_online
+  - Tu_van_dich_vu-Dia_chi
+  - Tu_van_dich_vu-Cat_thang_luoi_cho_be
+  - Tu_van_dich_vu-CMEs
+  - Tu_van_dich_vu-HIV
+  - Chi_phi-Doi/Huy_ngay_kham
+  - Tu_van_dich_vu-Thong_tin_suc_khoe
+  - Quy_trinh-Xe_cuu_thuong
+  - Tu_van_dich_vu-Mat_le
+  - Quy_trinh-Toa_thuoc
+  - Quy_trinh-Phat_hanh_hoa_don
+  - Tu_van_dich_vu-Dich_vu_pha_thai
+  - Mua_sach-Mua_so_tay_Can_thiep_cham_soc_dieu_duong_
+  - Tu_van_dich_vu-Co_so_vat_chat
+  - Chi_phi-Bang_gia_va_danh_muc_dich_vu_tiem_chung_va_tiem_ngua
+  - Tu_van_dich_vu-Thay_toa_thuoc_phu_hop_co_dia
+  - Tu_van_dich_vu-Tu_van_goi_sinh
+  - Tu_van_dich_vu-Su_kien_Benh_vien
+  - Quy_trinh-Kham_tai_Phong_kham_Quoc_te
+
+entities:
+  - name
+
+slots:
+  name: 
+    type: text
+    mappings:
+    - type: from_entity
+      entity: name 
+
+responses:
+  utter_chao_hoi: 
+  - text: "Xin chào. Mình có thể giúp gì cho bạn hôm nay?"
+
+  utter_chao_hoi_voi_ten: 
+  - text: "Xin chào {name}! Bệnh viện Đại học Y Dược TPHCM xin tiếp nhận thông tin và sẽ phản hồi trong thời gian sớm nhất! Tổng đài chăm sóc khách hàng: 1900 7178 🗺Địa chỉ: 215 Hồng Bàng, P.11, Q.5, TPHCM Đặt lịch khám bệnh trực tuyến: gọi tổng đài 1900 2115 hoặc tải ứng dụng UMC Care (App Store, Google Play) (Xem hướng dẫn tại: https://bit.ly/huongdanumccare Xem lịch khám của Bác sĩ: https://www.bvdaihoc.com.vn/Home/FindDoctor#maincont"
+
+  utter_tam_biet: 
+  - text: "Tạm biệt! Chúc bạn một ngày tốt đẹp!"
+
+  utter_Quy_trinh-Thu_tuc_BHYT:
+  - text: "Xin gửi bạn tham khảo thông tin hướng dẫn thủ tục khám bệnh, chữa bệnh BHYT tại Bệnh viện Đại học Y Dược TPHCM nhé: http://bvdaihoc.com.vn/Home/ViewDetail/5128#maincontent Thân chào bạn."
+
+  utter_Quy_trinh-BHYT_trai_tuyen:
+  - text: "Chào bạn. Bạn cần có giấy chuyển tuyến để hưởng BHYT tại Bệnh viện. Bạn vui lòng liên hệ Phòng Bảo hiểm Y tế theo số điện thoại: (028) 3952 5372 (giờ hành chính) để được hướng dẫn cụ thể nhé.    "
+
+  utter_Quy_trinh-Hien_tang:
+  - text: "Chào bạn, Bạn vui lòng liên hệ Bộ môn Giải phẫu học (trong giờ hành chính): 028 3950 9943 để được hướng dẫn nhé! "
+
+  utter_Tu_van_dich_vu-Trung_tam_U_Mau_co_so_3:
+  - text: "Chào bạn, bạn có thể đưa bé đến Trung tâm U máu tại cơ sở 3 của Bệnh viện Đại học Y Dược TPHCM. Trung tâm U máu khám và điều trị các trường hợp u máu nhũ nhi, dị dạng tĩnh mạch, giãn mạch, sẹo, bớt rượu vang, bớt Ota, bớt bẩm sinh, bớt cafe sữa và các dạng bớt khác, đốm nâu, tàn nhang... Sau khi thăm khám, BS sẽ đánh giá tình trạng và tư vấn cụ thể phương pháp điều trị bạn nhé.   Thông tin liên hệ:   Điện thoại: 028 38 420 070   Địa chỉ: 221B Hoàng Văn Thụ, phường 8, Phú Nhuận, TPHCM   Thân chào bạn. "
+
+  utter_Quy_trinh-Xe_cuu_thuong:
+  - text: "Đội xe vận chuyển cấp cứu với chức năng vận chuyển cấp cứu bệnh nhân 24/7 trong mọi trường hợp như:    - Cấp cứu ngoại viện   - Cấp cứu hàng loạt   - Cấp cứu thảm họa   - Khám bệnh cấp cứu tại nhà, chuyển viện, vận chuyển người bệnh từ Bệnh viện Đại học Y Dược về nhà.   Nhằm mang lại sự an toàn cho người bệnh và đảm bảo cho quy trình chuyển viện cấp cứu, các xe cấp cứu được trang bị đầy đủ phương tiện, trang thiết bị y tế phục vụ cho bệnh nhân như bình oxy, máy thở, máy hút đàm, băng ca, cán xúc, túi cấp cứu (bộ đặt nội khí quản, bóng Ambu, các loại thuốc dùng cho cấp cứu, dụng cụ y tế…). Mọi chi tiết, vui lòng liên hệ khoa Cấp cứu – Bệnh viện Đại học Y Dược TPHCM  Điện thoại: (08) 54051515 hoặc (08) 39525115"
+
+  utter_Mua_sach-Mua_Sieu_am_atlas:
+  - text: "Chào bạn. Bạn vui lòng liên hệ thư ký khoa Chẩn đoán hình ảnh theo số: 0983 703 587 (trong giờ hành chính) nhé. "
+
+  utter_Tu_van_dich_vu-Huong_dan_su_dung_thuoc:
+  - text: "Bạn vui lòng liên hệ Bộ phận tư vấn sử dụng thuốc tại: 028 3952 5295 (trong giờ hành chính) để được hướng dẫn nhé."
+
+  utter_Tu_van_dich_vu-CMEs:
+  - text: "Bạn vui lòng xem các lớp tại: https://khdt.edu.vn/"
+
+  utter_Quy_trinh-Quy_trinh_kham_chua_benh:
+  - text: "Chào bạn, để tránh chờ đợi lâu, bạn vui lòng đặt lịch khám bệnh trực tuyến qua tổng đài 1900 2115 hoặc tải ứng dụng: UMC- Care (App Store, Google Play), xem hướng dẫn tại: https://www.bvdaihoc.com.vn/upload/images/cms/2023/10/11/UMC%20Care%20a4%20-%20adapt.pdf   Thân chào bạn. "
+
+  utter_Chi_phi-Chi_phi_va_phi_dich_vu_y_te_va_cham_soc_suc_khoe:
+  - text: "Chào bạn,   Bệnh viện có đầy đủ tất cả các chuyên khoa. Chi phí khám chuyên khoa là 150.000 đồng/ lượt khám. Đối với chuyên khoa Tâm thần kinh là 250.000 đồng/ lượt khám; Phòng khám Chuyên gia thần kinh là 300.000 đồng/ lượt khám; Khám Tư vấn tâm lý là 500.000 đồng/ lượt khám.   Ngoài ra, bạn có thể đăng ký khám tại phòng khám quốc tế dành cho khách hàng trong và ngoài nước. Chi phí khám chuyên khoa là 800.000 đồng/ lượt khám.    Thân chào bạn. "
+
+  utter_Quy_trinh-Kham_suc_khoe_tong_quat_va_dinh_ky:
+  - text: "Chào bạn,    Hiện tại, khám tổng quát có 3 hình thức đăng ký, bao gồm: Khám tổng quát tại phòng khám Tổng quát - khoa Khám bệnh, Khám tổng quát tại phòng khám Quốc tế và khám, tầm soát sức khỏe tại Khoa Khám sức khỏe theo yêu cầu.   1. Khám tổng quát tại phòng khám Tổng quát - khoa Khám bệnh   Chi phí đăng ký khám tổng quát là 150.000 đồng/ lượt khám. Sau khi vào phòng khám tổng quát, bác sĩ sẽ thăm khám trực tiếp, đánh giá tình trạng hiện tại và tùy vào tình trạng sức khỏe, giới tính, độ tuổi, tiền sử gia đình… sẽ có chỉ định thực hiện cận lâm sàng phù hợp (xét nghiệm, siêu âm, X-Quang, đo điện tim, siêu âm tim…). Chi phí gói khám cơ bản sẽ từ 1.500.000 – 2.000.000 đồng.     Để tránh thời gian chờ đợi, bạn có thể đặt lịch phòng khám Tổng quát qua tổng đài 1900 2115 hoặc tải ứng dụng: UMC- Care (App Store, Google Play). (Xem hướng dẫn đặt lịch khám và thanh toán online tại: https://www.bvdaihoc.com.vn/upload/images/cms/2023/10/11/UMC%20Care%20a4%20-%20adapt.pdf). Đối với các cận lâm sàng, bạn sẽ đến trực tiếp bệnh viện để đóng tiền và lấy số (không đăng ký trước qua ứng dụng).   2. Khám tổng quát tại Phòng khám Quốc tế   Ngoài ra, bạn có thể đăng ký khám tại phòng khám quốc tế dành cho khách hàng trong và ngoài nước. Việc tư vấn, khám bệnh, chẩn đoán, xét nghiệm ban đầu được thực hiện ngay tại phòng khám, giúp người bệnh rút ngắn thời gian chờ đợi, di chuyển và thực hiện cận lâm sàng. Người bệnh được nhân viên y tế hỗ trợ ở tất cả các khâu khám chữa bệnh: đăng ký khám bệnh, khám bệnh, thực hiện cận lâm sàng và mua thuốc. Khu vực chờ riêng tư, tiện nghi, wifi miễn phí và có hỗ trợ phiên dịch tiếng Anh, Hoa, Hàn Quốc, Campuchia,…    Để đăng ký khám tại phòng khám quốc tế, vui lòng liên hệ bộ phận tiếp nhận theo số điện thoại sau: (028) 3952 5346 (trong giờ hành chính).    3. Khám, tầm soát sức khỏe tại khoa Khám sức khỏe theo yêu cầu   Khoa có các gói khám tổng quát và chuyên sâu đa dạng, giúp khách hàng dễ dàng lựa chọn gói khám phù hợp độ tuổi, nhu cầu, tình trạng sức khỏe… Các gói tầm soát sức khỏe tổng quát được thiết kế theo 3 cấp độ tiêu chuẩn, nâng cao và cao cấp với các gói chính đó là khám, tầm soát các loại bệnh lý (Tuyến giáp, Tăng huyết áp, Viêm gan mạn, Hen phế quản, Lao phổi… ); khám, tầm soát các loại ung thư (Ung thư phổi, Ung thư dạ dày, Ung thư gan, Ung thư đại trực tràng, Ung thư tuyến vú, Sàng lọc nguy cơ và tầm soát ung thư vòm  họng, Ung thư cổ tử cung và buồng trứng) và khám, tư vấn di truyền (tầm soát gen).    Thông tin liên hệ:   * Khoa Khám sức khỏe theo yêu cầu - Lầu 1, khu B, Bệnh viện Đại học Y Dược TPHCM    * Số điện thoại: (028) 3952 5129 – (028) 3952 5130 – (028) 3952 5351   Thân chào bạn."
+
+  utter_Tu_van_dich_vu-Tu_van_tiem_chung_va_phong_ngua_benh:
+  - text: "Chào bạn.    Bạn vui lòng liên hệ Đơn vị Tiêm chủng (trong giờ hành chính) theo số điện thoại (028) 3952 5144 để được tư vấn nhé. "
+
+  utter_Chi_phi-Bang_gia_va_danh_muc_dich_vu_tiem_chung_va_tiem_ngua:
+  - text: "Chào bạn. Vui lòng truy cập bảng giá tiêm chủng các vắc xin tại: https://www.bvdaihoc.com.vn/Home/ViewDetail/4404#maincontent"
+
+  utter_Tu_van_chuyen_khoa-Kham_Ung_buou:
+  - text: "Chào bạn,   Bạn vui lòng đăng ký phòng khám Ung bướu của Bệnh viện để BS chuyên khoa thăm khám trực tiếp, đánh giá tình trạng và tư vấn cụ thể phương pháp điều trị nhé. Để tránh thời gian chờ đợi, bạn vui lòng đặt lịch khám bệnh trực tuyến qua tổng đài 1900 2115 hoặc tải ứng dụng: UMC Care (App Store, Google Play). (Xem hướng dẫn đặt lịch khám và thanh toán online tại: https://www.bvdaihoc.com.vn/upload/images/cms/2023/10/11/UMC%20Care%20a4%20-%20adapt.pdf).   Thân chào bạn. "
+
+  utter_Tu_van_dich_vu-Noi_soi:
+  - text: "Chào bạn, bạn vui lòng đặt khám, sau đó Bác sĩ sẽ tư vấn, hẹn lịch và cho chỉ định thực hiện nội soi nhé. Để tránh thời gian chờ đợi, bạn vui lòng đặt lịch khám bệnh trực tuyến qua tổng đài 1900 2115 hoặc tải ứng dụng: UMC Care (App Store, Google Play). (Xem hướng dẫn đặt lịch khám và thanh toán online tại: https://www.bvdaihoc.com.vn/upload/images/cms/2023/10/11/UMC%20Care%20a4%20-%20adapt.pdf).   Thân chào bạn. "
+
+  utter_Tu_van_dich_vu-Cat_thang_luoi_cho_be:
+  - text: "Chào bạn,   Bệnh viện có cắt thắng lưỡi cho bé dưới 3 tháng bạn nhé. Thông tin chi tiết, vui lòng liên hệ phòng khám Nhi (trong giờ hành chính) theo số điện thoại 028 3952 5144. "
+
+  utter_Tu_van_dich_vu-Chuyen_huong_kham_tong_quat_hoac_theo_trieu_chung_do_phong_kham_hau_COVID_da_ngung_hoat_dong:
+  - text: "Chào bạn. Bạn có thể đăng ký khám các chuyên khoa tương ứng với triệu chứng của mình. Bạn vui lòng cho biết triệu chứng để Bệnh viện tư vấn chuyên khoa phù hợp với bạn nhé "
+
+  utter_Tu_van_dich_vu-Mat_le:
+  - text: "Chào bạn. Bệnh viện có điều trị mắt lé bạn nhé. Bạn vui lòng đến khám để được Bác sĩ thăm khám và tư vấn cụ thể. Bạn chọn khám tại Phòng khám Mắt - ThS BS. Ngô Nguyễn Thu Hằng nhé. "
+
+  utter_Tu_van_dich_vu-HIV:
+  - text: "Chào bạn. Bệnh viện có thực hiện xét nghiệm này, bạn đến khu B quầy Bác sĩ tư vấn để được BS cho chỉ định thực hiện và tư vấn về chi phí nhé.  Thân chào bạn. "
+
+  utter_Tu_van_dich_vu-Di_ung:
+  - text: "Bạn vui lòng đặt khám tại Phòng khám Dị ứng - Miễn dịch lâm sàng. Bác sĩ cho bạn chỉ định xét nghiệm nhé. "
+
+  utter_Quy_trinh-Noi_soi:
+  - text: "Bạn vui lòng nhịn ăn từ 8-10 tiếng nhé."
+
+  utter_Quy_trinh-Toa_thuoc:
+  - text: "Chào bạn. Người bệnh không nên uống lại toa thuốc cũ nếu như không có chỉ định của Bác sĩ, bạn vui lòng tái khám để Bác sĩ cho chỉ định phù hợp nhé. "
+
+  utter_Tu_van_dich_vu-Thay_toa_thuoc_phu_hop_co_dia:
+  - text: "Chào bạn. Vui lòng đặt tái khám để Bác sĩ thăm khám tình trạng và kê lại đơn phù hợp ạ. Để tránh thời gian chờ đợi, bạn vui lòng đặt lịch khám bệnh trực tuyến qua tổng đài 1900 2115 hoặc tải ứng dụng: UMC Care (App Store, Google Play). Xem hướng dẫn tại: https://www.bvdaihoc.com.vn/upload/images/cms/2023/10/11/UMC%20Care%20a4%20-%20adapt.pdf"
+
+  utter_Tu_van_dich_vu-Dieu_tri_noi_tru:
+  - text: "Chào bạn. Bạn vui lòng đặt khám, Bác sĩ sẽ cho bạn chỉ định nhập viện và hướng dẫn quy trình cụ thể. Để tránh thời gian chờ đợi, bạn vui lòng đặt lịch khám bệnh trực tuyến qua tổng đài 1900 2115 hoặc tải ứng dụng: UMC Care (App Store, Google Play). Xem hướng dẫn tại: https://www.bvdaihoc.com.vn/upload/images/cms/2023/10/11/UMC%20Care%20a4%20-%20adapt.pdf"
+
+  utter_Tu_van_dich_vu-Tu_van_chuyen_khoa:
+  - text: "Chào bạn: vu lòng xem thông tin về các loại bệnh tại: https://www.bvdaihoc.com.vn/Home/ViewDetail/3163#maincontent"
+
+  utter_Tu_van_dich_vu-Tu_van_goi_sinh:
+  - text: "Chào bạn,   Khi làm thủ tục nhập viện, sản phụ và gia đình sẽ được nhân viên tư vấn chi phí và dịch vụ sinh (hoặc mổ lấy thai) trọn gói của Bệnh viện. Dịch vụ sinh trọn gói giúp đảm bảo an toàn cao nhất cho cả Mẹ và bé, toàn bộ quá trình sinh nở được thực hiện dưới sự theo dõi chặt chẽ của các Bác sĩ chuyên khoa và Hộ sinh.   * Sinh thường: Số ngày nằm viện trung bình là 02 ngày. Chi phí dao động từ 11.500.000 VND – 14.400.000 VND (Tùy loại dịch vụ như sinh thường ngôi chỏm, sinh thường ngôi ngược, sinh có can thiệp, sinh đôi trở lên...)   * Sinh mổ - Gây tê: Số ngày nằm viện trung bình là 03 ngày. Chi phí dao động từ 15.800.000 VND – 18.700.000 VND (Tùy loại dịch vụ như Sinh mổ lần đầu (đơn thai),    Sinh mổ lần hai (vết mổ cũ 1 lần), Sinh mổ do mắc bệnh toàn thân như tim, thận, gan, huyết học, nội tiết…)   * Sinh mổ - Gây mê: Số ngày nằm viện trung bình là 03 ngày. Chi phí dao động từ 16.600.000 VND – 19.800.000 VND (Tùy loại dịch vụ như Sinh mổ lần đầu (đơn thai),    Sinh mổ lần hai (vết mổ cũ 1 lần), Sinh mổ do mắc bệnh toàn thân như tim, thận, gan, huyết học, nội tiết…)      Chi phí trọn gói trên bao gồm:   Khám tiền mê.    Bác sĩ sản khám chờ sinh, yêu cầu bác sĩ đỡ sinh và thăm khám hằng ngày, phòng sinh gia đình.   Theo dõi tim thai và cơn gò bằng monitoring.   Chi phí phòng sinh/ phòng mổ.   Chi phí vật tư y tế tiêu hao thông thường.   Chi phí gây mê/ gây tê cho gói sinh mổ.   Chi phí thuốc (điều trị giảm đau, dịch truyền cơ bản, thuốc co bóp tử cung).   03 bữa ăn chính mỗi ngày cho sản phụ.   Chi phí phòng cho 02 ngày đối với gói sinh thường hoặc 03 ngày đối với gói sinh mổ kể từ ngày sinh em bé.   Chi phí chích Vitamin K, chích ngừa Lao, Viêm gan siêu vi B (nếu đủ điều kiện chích ngừa).   Bác sĩ Nhi thăm khám bé ngay khi chào đời, ngày sau sinh và trước xuất viện.   Hộ sinh chăm sóc Mẹ và tắm bé hằng ngày.   Miễn phí một người thân ở lại với sản phụ kèm theo tiện ích ghế nằm, mềm, gối.   Hệ thống Phòng nghỉ dưỡng đảm bảo yêu cầu về y tế, sạch sẽ giúp cho Mẹ và bé  nhanh chóng hồi phục.   Các dịch vụ khác phát sinh ngoài trọn gói:   Chi phí lưu viện để điều trị bệnh lý trước và sau sinh theo chỉ định của Bác sĩ sản khoa.   Chi phí dịch vụ cận lâm sàng và điều trị các bệnh lý khác hoặc các biến chứng cho Mẹ và bé như: Điều trị bệnh vàng da, tiền phòng tại Đơn vị Đơn nguyên sơ sinh…   Chi phí truyền máu.   Chi phí lưu viện thêm theo yêu cầu của Mẹ.   Chi phí bao nguyên phòng.   Dịch vụ khác không bao gồm trọn gói.   Trường hợp sản phụ có bệnh lý ngoài sản phụ khoa hoặc bé có bệnh lý ngoài khả năng điều trị của Bệnh viện, Bệnh viện sẽ giúp chuyển đến các bệnh viện chuyên khoa, mọi chi phí vận chuyển người nhà thanh toán cho Bệnh viện và chi phí điều trị do người nhà thanh toán trực tiếp với bệnh viện chuyên khoa.   Lưu ý:   - Chi phí trọn gói được áp dụng cho Mẹ và bé sau sinh (hoặc mổ) có thể trạng sức khỏe bình thường, không có bệnh lý khác.   - Chi phí thực tế có thể thay đổi trên từng trường hợp cụ thể do phát sinh theo chỉ định của Bác sĩ hay do yêu cầu của sản phụ thì sản phụ phải trả thêm tiền như sau:   + Đối với sinh thường: gây tê ngoài màng cứng (sinh không đau), may thẩm mỹ tầng sinh môn…   + Đối với sinh mổ: kết hợp bóc u nang buồng trứng, u xơ tử cung…      - Không hoàn lại tiền thừa nếu sản phụ chưa sử dụng hết các hạng mục trong gói dịch vụ.   - Vì lý do riêng, sản phụ muốn về sớm hơn thời gian quy định, bệnh viện không hoàn lại tiền phòng cho ngày về sớm đó.      Điều kiện áp dụng giá trọn gói:    Sản phụ phải đăng ký dịch vụ sinh trọn gói ngay lúc nhập viện tại bộ phận làm thủ tục nhập viện và nộp tạm ứng tại quầy thu ngân (có thể nộp tạm ứng ít nhất 50%/chi phí trọn gói hoặc nộp toàn phần chi phí trọn gói).      Mọi thông tin chi tiết, vui lòng liên hệ Khoa Phụ sản Bệnh viện Đại học Y Dược TPHCM (028) 3952 5230 (trong giờ hành chính)   Thân chào bạn. "
+
+  utter_Tu_van_dich_vu-Tu_van_dich_vu_sinh:
+  - text: "Chào bạn, vui lòng liên hệ Khoa Phụ sản Bệnh viện Đại học Y Dược TPHCM (028) 3952 5230 (trong giờ hành chính)   Thân chào bạn. "
+
+  utter_Tu_van_dich_vu-Dich_vu_pha_thai:
+  - text: "Chào bạn, hiện tại Bệnh viện chưa triển khai dịch vụ này nhé. Nếu bạn cần hỗ trợ các vấn đề khác, Bệnh viện sẵn lòng tư vấn cho bạn. "
+
+  utter_Mua_sach-Mua_so_tay_Can_thiep_cham_soc_dieu_duong_:
+  - text: "Chào bạn. Bạn vui lòng liên hệ Phòng Điều dưỡng BV ĐHYD TPHCM theo điện thoại 028 3952 5377 (trong giờ hành chính) để được hướng dẫn cụ thể nhé. "
+
+  utter_Quy_trinh-Kham_tai_Phong_kham_Quoc_te:
+  - text: "Chào bạn, Bệnh viện không có khám dịch vụ. Tuy nhiên, bạn có thể đăng ký khám tại phòng khám quốc tế dành cho khách hàng trong và ngoài nước. Việc tư vấn, khám bệnh, chẩn đoán, xét nghiệm ban đầu được thực hiện ngay tại phòng khám, giúp người bệnh rút ngắn thời gian chờ đợi, di chuyển và thực hiện cận lâm sàng. Người bệnh được nhân viên y tế hỗ trợ ở tất cả các khâu khám chữa bệnh: đăng ký khám bệnh, khám bệnh, thực hiện cận lâm sàng và mua thuốc. Khu vực chờ riêng tư, tiện nghi, wifi miễn phí và có hỗ trợ phiên dịch tiếng Anh, Hoa, Hàn Quốc, Campuchia,…    Để đăng ký khám tại phòng khám quốc tế, vui lòng liên hệ bộ phận tiếp nhận theo số điện thoại sau: (028) 3952 5346 (trong giờ hành chính).  "
+
+  utter_Chi_phi-Hoan_tien_dich_vu_can_lam_sang,_va_cac_dich_vu_dat_kham:
+  - text: "Chào bạn. Vui lòng liên hệ phòng Tài chính Kế toán - bộ phận Hoàn tiền tại: 028 3952 5269 (trong giờ hành chính). Thân chào bạn."
+
+  utter_Chi_phi-Doi/Huy_ngay_kham:
+  - text: "Chào bạn, để thực hiện đổi lịch khám, bạn vui lòng hủy phiếu rồi đặt lại nhé. Bệnh viện sẽ hoàn tiền từ 1-45 ngày."
+
+  utter_Quy_trinh-Phat_hanh_hoa_don:
+  - text: "Chào bạn, Bạn vui lòng liên hệ bộ phận phát hành hoá đơn ngoại trú (trong giờ hành chính) theo số điện thoại sau 028 3952 5269 nhé. "
+
+  utter_Tu_van_dich_vu-Tra_cuu_hoa_don:
+  - text: "Bạn vui lòng truy cập: https://hoadon.umc.edu.vn/ (Xem hướng dẫn tại: https://hoadon.umc.edu.vn/tim-hieu-hoa-don/Huong-dan-tra-cuu-hoa-don/14)"
+
+  utter_Quy_trinh-Lich_kham_cua_Benh_vien:
+  - text: "Chào bạn. Bệnh viện làm việc theo khung giờ như sau và không khám ngoài giờ nhé:  - Thời gian phát số khám bệnh từ thứ Hai đến thứ Sáu: 04h00 - 16h30, thứ Bảy: 04h00 – 11h30  - Thời gian khám bệnh từ thứ Hai đến thứ Sáu: 06h30 - 12h00 và 13h00 – 16h30 (đến khi hết người khám), thứ Bảy: 06h30 - 11h30 (đến khi hết người khám).  - Lịch khám của Bác sĩ: http://bvdaihoc.com.vn/Home/ViewLichKham#maincontent  - Hotline Chăm sóc khách hàng: 19007178 "
+
+  utter_Tu_van_dich_vu-Giao_thuoc_tai_nha:
+  - text: "Chào bạn,    Hiện tại, Bệnh viện chưa triển khai dịch vụ bán thuốc online và giao thuốc tận nhà. Nếu trước đó người bệnh đã khám tại Bệnh viện, bạn vui lòng cung cấp tên Phòng khám để Bệnh viện cung cấp số điện thoại tư vấn nhé! "
+
+  utter_Tu_van_dich_vu-Kham_online:
+  - text: "Chào bạn,    Hiện tại Bệnh viện Đại học Y Dược TPHCM - Cơ sở 1 chưa triển khai dịch vụ tư vấn, khám bệnh trực tuyến hay tại nhà. Nếu bạn có lịch tái khám mà chưa đến Bệnh viện được thì bạn vui lòng cung cấp tên Phòng khám để Bệnh viện hỗ trợ tư vấn nhé!   Thân chào bạn. "
+
+  utter_Quy_trinh-Gio_tham_benh:
+  - text: "Chào bạn, mỗi khoa trong Bệnh viện có thời gian thăm bệnh khác nhau, cụ thể vui lòng xem tại: https://umceduvn-my.sharepoint.com/:i:/g/personal/data3_truyenthong_umc_edu_vn/EaNKJVARG8FMr_OkBByybT4B6IQR3CgOW9kXyJH34agzgA?e=aolgzb     Lưu ý: người nuôi bệnh/thăm bệnh vui lòng đến quầy thông tin tại Tầng Trệt khu A, đăng ký thăm bệnh và xuất trình giấy tờ tùy thân để nhận thẻ thăm bệnh. "
+
+  utter_Tu_van_dich_vu-Dia_chi:
+  - text: "Cơ sở 1 215 Hồng Bàng, P.11, Q.5,TP.HCM Điện thoại: (84.28) 3855 4269 Fax: (84.28) 3950 6126 Email: bvdhyd@umc.edu.vn Website: www.bvdaihoc.com.vn Cơ sở 2 201 Nguyễn Chí Thanh, P.12, Q.5,TP.HCM Điện thoại: (84.28) 3955 5548 Fax: (84.28) 3955 9706 Email: bvdaihoccoso2@umc.edu.vn Website: www.bvdaihoccoso2.com.vn Cơ sở 3 221B Hoàng Văn Thụ, P.8, Q.PN,TP.HCM Điện thoại: (84.28) 3845 1889 Fax: (84.28) 3844 4977 Email: bvdaihoccoso3@umc.edu.vn Website: www.bvdaihoccoso3.com.vn Đơn vị hợp tác Phòng khám Bệnh viện Đại học Y Dược 1 20-22 Dương Quang Trung, P.12, Q.10 TP. HCM Điện thoại đặt hẹn: 1900 6923 Email: contact.us@umcclinic.com.vn Website: www.umcclinic.com.vn Fanpage: www.facebook.com/pkbvdhyd1"
+
+  utter_Tu_van_dich_vu-Co_so_vat_chat:
+  - text: "Bạn vui lòng truy câp: https://www.bvdaihoc.com.vn/Home/ViewDetail/7#maincontent"
+
+  utter_Tu_van_dich_vu-Thong_tin_suc_khoe:
+  - text: "Vui lòng truy cập trang Youtube của Bệnh viện tại: https://www.youtube.com/@benhviendaihocyduochcmc"
+
+  utter_Tu_van_dich_vu-Dang_ky_kham_benh:
+  - text: "Chào bạn, để tránh chờ đợi lâu, bạn vui lòng đặt lịch khám bệnh trực tuyến tại: https://umc.medpro.com.vn/, qua tổng đài 1900 2115 hoặc tải ứng dụng UMC Care (App Store, Google Play). (Xem hướng dẫn đặt lịch khám và thanh toán online tại: https://www.bvdaihoc.com.vn/upload/images/cms/2023/10/11/UMC%20Care%20a4%20-%20adapt.pdf). Thân chào bạn."
+
+  utter_Tu_van_dich_vu-Lich_kham__:
+  - text: "Chào bạn. Bệnh viện làm việc theo khung giờ như sau và không khám ngoài giờ nhé: Thời gian phát số khám bệnh từ thứ Hai đến thứ Sáu: 04h00 - 16h30, thứ Bảy: 04h00 – 11h30 Thời gian khám bệnh từ thứ Hai đến thứ Sáu: 06h30 - 12h00 và 13h00 – 16h30 (đến khi hết người khám), thứ Bảy: 06h30 - 11h30 (đến khi hết người khám). - Lịch khám của Bác sĩ: http://bvdaihoc.com.vn/Home/ViewLichKham#maincontent - Hotline Chăm sóc khách hàng: 1900 7178"
+
+  utter_Tu_van_dich_vu-Cong_dong_nguoi_benh:
+  - text: "Bệnh viện có nhóm Zalo cộng đồng người bệnh, để tham gia, vui lòng truy cập   Cộng đồng người bệnh Parkinson: https://zalo.me/g/iaqnmo163   Cộng đồng người bệnh Đái tháo đường: https://zalo.me/g/adrawr283   Cộng đồng người bệnh Ung thư gan: https://zalo.me/g/stxzgi592 "
+
+  utter_Tu_van_dich_vu-Su_kien_Benh_vien:
+  - text: "Mọi thông tin chi tiết, vui lòng cập nhật tại: https://www.facebook.com/benhviendaihocyduoc"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
