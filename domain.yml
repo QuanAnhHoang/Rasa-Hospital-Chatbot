@@ -1,75 +1,53 @@
 version: "3.1"
 
 intents:
-  - chao_hoi 
-  - cho_biet_ten 
-  - tam_biet 
-  - Tu_van_dich_vu-Di_ung
-  - Quy_trinh-Noi_soi
-  - Quy_trinh-Lich_kham_cua_Benh_vien
-  - Tu_van_dich_vu-Tu_van_dich_vu_sinh
-  - Quy_trinh-Quy_trinh_kham_chua_benh
-  - Tu_van_dich_vu-Noi_soi
-  - Tu_van_dich_vu-Lich_kham__
-  - Tu_van_dich_vu-Giao_thuoc_tai_nha
-  - Tu_van_chuyen_khoa-Kham_Ung_buou
-  - Quy_trinh-Kham_suc_khoe_tong_quat_va_dinh_ky
-  - Quy_trinh-Gio_tham_benh
-  - Tu_van_dich_vu-Tu_van_tiem_chung_va_phong_ngua_benh
-  - Tu_van_dich_vu-Tra_cuu_hoa_don
-  - Tu_van_dich_vu-Chuyen_huong_kham_tong_quat_hoac_theo_trieu_chung_do_phong_kham_hau_COVID_da_ngung_hoat_dong
-  - Tu_van_dich_vu-Cong_dong_nguoi_benh
-  - Tu_van_dich_vu-Tu_van_chuyen_khoa
-  - Chi_phi-Chi_phi_va_phi_dich_vu_y_te_va_cham_soc_suc_khoe
-  - Tu_van_dich_vu-Trung_tam_U_Mau_co_so_3
-  - Quy_trinh-Thu_tuc_BHYT
-  - Mua_sach-Mua_Sieu_am_atlas
-  - Chi_phi-Hoan_tien_dich_vu_can_lam_sang,_va_cac_dich_vu_dat_kham
-  - Tu_van_dich_vu-Dang_ky_kham_benh
-  - Tu_van_dich_vu-Huong_dan_su_dung_thuoc
-  - Tu_van_dich_vu-Dieu_tri_noi_tru
-  - Quy_trinh-Hien_tang
-  - Quy_trinh-BHYT_trai_tuyen
-  - Tu_van_dich_vu-Kham_online
-  - Tu_van_dich_vu-Dia_chi
-  - Tu_van_dich_vu-Cat_thang_luoi_cho_be
   - Tu_van_dich_vu-CMEs
-  - Tu_van_dich_vu-HIV
-  - Chi_phi-Doi/Huy_ngay_kham
-  - Tu_van_dich_vu-Thong_tin_suc_khoe
-  - Quy_trinh-Xe_cuu_thuong
-  - Tu_van_dich_vu-Mat_le
   - Quy_trinh-Toa_thuoc
+  - Tu_van_dich_vu-Thay_toa_thuoc_phu_hop_co_dia
+  - Tu_van_dich_vu-Tu_van_tiem_chung_va_phong_ngua_benh
+  - Quy_trinh-Quy_trinh_kham_chua_benh
+  - Tu_van_dich_vu-Tu_van_chuyen_khoa
+  - Tu_van_dich_vu-Thong_tin_suc_khoe
+  - Tu_van_dich_vu-Trung_tam_U_Mau_co_so_3
+  - Mua_sach-Mua_so_tay_Can_thiep_cham_soc_dieu_duong_
+  - Tu_van_dich_vu-HIV
+  - Tu_van_dich_vu-Chuyen_huong_kham_tong_quat_hoac_theo_trieu_chung_do_phong_kham_hau_COVID_da_ngung_hoat_dong
+  - Quy_trinh-Thu_tuc_BHYT
+  - Tu_van_dich_vu-Huong_dan_su_dung_thuoc
+  - Tu_van_chuyen_khoa-Kham_Ung_buou
+  - Tu_van_dich_vu-Noi_soi
+  - Mua_sach-Mua_Sieu_am_atlas
+  - Quy_trinh-Hien_tang
+  - Chi_phi-Hoan_tien_dich_vu_can_lam_sang,_va_cac_dich_vu_dat_kham
+  - Chi_phi-Bang_gia_va_danh_muc_dich_vu_tiem_chung_va_tiem_ngua
+  - Tu_van_dich_vu-Tu_van_dich_vu_sinh
+  - Tu_van_dich_vu-Di_ung
+  - Quy_trinh-Lich_kham_cua_Benh_vien
+  - Chi_phi-Doi/Huy_ngay_kham
+  - Quy_trinh-Gio_tham_benh
+  - Chi_phi-Chi_phi_va_phi_dich_vu_y_te_va_cham_soc_suc_khoe
+  - Quy_trinh-BHYT_trai_tuyen
+  - Quy_trinh-Noi_soi
+  - Tu_van_dich_vu-Kham_online
+  - Tu_van_dich_vu-Cong_dong_nguoi_benh
+  - Quy_trinh-Kham_suc_khoe_tong_quat_va_dinh_ky
+  - Tu_van_dich_vu-Giao_thuoc_tai_nha
+  - Tu_van_dich_vu-Tra_cuu_hoa_don
+  - Tu_van_dich_vu-Cat_thang_luoi_cho_be
+  - Tu_van_dich_vu-Dieu_tri_noi_tru
+  - Tu_van_dich_vu-Co_so_vat_chat
+  - Tu_van_dich_vu-Lich_kham__
+  - Tu_van_dich_vu-Mat_le
+  - Tu_van_dich_vu-Su_kien_Benh_vien
+  - Tu_van_dich_vu-Dang_ky_kham_benh
+  - Tu_van_dich_vu-Tu_van_goi_sinh
+  - Quy_trinh-Kham_tai_Phong_kham_Quoc_te
   - Quy_trinh-Phat_hanh_hoa_don
   - Tu_van_dich_vu-Dich_vu_pha_thai
-  - Mua_sach-Mua_so_tay_Can_thiep_cham_soc_dieu_duong_
-  - Tu_van_dich_vu-Co_so_vat_chat
-  - Chi_phi-Bang_gia_va_danh_muc_dich_vu_tiem_chung_va_tiem_ngua
-  - Tu_van_dich_vu-Thay_toa_thuoc_phu_hop_co_dia
-  - Tu_van_dich_vu-Tu_van_goi_sinh
-  - Tu_van_dich_vu-Su_kien_Benh_vien
-  - Quy_trinh-Kham_tai_Phong_kham_Quoc_te
-
-entities:
-  - name
-
-slots:
-  name: 
-    type: text
-    mappings:
-    - type: from_entity
-      entity: name 
+  - Tu_van_dich_vu-Dia_chi
+  - Quy_trinh-Xe_cuu_thuong
 
 responses:
-  utter_chao_hoi: 
-  - text: "Xin chào. Mình có thể giúp gì cho bạn hôm nay?"
-
-  utter_chao_hoi_voi_ten: 
-  - text: "Xin chào {name}! Bệnh viện Đại học Y Dược TPHCM xin tiếp nhận thông tin và sẽ phản hồi trong thời gian sớm nhất! Tổng đài chăm sóc khách hàng: 1900 7178 🗺Địa chỉ: 215 Hồng Bàng, P.11, Q.5, TPHCM Đặt lịch khám bệnh trực tuyến: gọi tổng đài 1900 2115 hoặc tải ứng dụng UMC Care (App Store, Google Play) (Xem hướng dẫn tại: https://bit.ly/huongdanumccare Xem lịch khám của Bác sĩ: https://www.bvdaihoc.com.vn/Home/FindDoctor#maincont"
-
-  utter_tam_biet: 
-  - text: "Tạm biệt! Chúc bạn một ngày tốt đẹp!"
-
   utter_Quy_trinh-Thu_tuc_BHYT:
   - text: "Xin gửi bạn tham khảo thông tin hướng dẫn thủ tục khám bệnh, chữa bệnh BHYT tại Bệnh viện Đại học Y Dược TPHCM nhé: http://bvdaihoc.com.vn/Home/ViewDetail/5128#maincontent Thân chào bạn."
 

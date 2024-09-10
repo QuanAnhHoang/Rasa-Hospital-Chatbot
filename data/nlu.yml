@@ -1,210 +1,965 @@
 version: "3.1"
 
 nlu:
-
-- intent: chao_hoi 
-  examples: |
-    - chào
-    - xin chào
-    - chào bạn
-    - hi
-
-- intent: cho_biet_ten 
-  examples: |
-    - Tôi tên là [Đạt](name)
-    - Tên tôi là [Nguyễn](name)
-    - Tôi là [Trần](name)
-    - Em là [Thảo](name)
-    - [Lê](name) là tên của tôi
-    - Mình là [Quân](name) 
-
-- intent: tam_biet 
-  examples: |
-    - tạm biệt
-    - chào nhé
-    - hẹn gặp lại
-    - hẹn gặp lại sau
-
 - intent: Quy_trinh-Thu_tuc_BHYT
   examples: |
     - Tôi muốn hỏi về Bảo hiểm Y tế tại Bệnh viện?
+    - cho em xin thông tin về bảo hiểm y tế được không ạ?
+    - bảo hiểm y tế có xài được cho bệnh viện này ko ?
+    - bảo hiểm y tế chi trả những dịch vụ nào ở bệnh viện?
+    - mức chi trả của bảo hiểm y tế tại đây là bao nhiêu?
+    - thủ tục sử dụng bảo hiểm y tế tại bệnh viện như thế nào?
+    - tôi cần mang theo những giấy tờ gì khi sử dụng bảo hiểm y tế?
+    - tôi có thể sử dụng thẻ bảo hiểm y tế của tỉnh khác tại đây không?
+    - bệnh viện có áp dụng bảo hiểm y tế trái tuyến không?
+    - nếu tôi quên mang thẻ bảo hiểm y tế thì sao?
+    - tôi có thể đăng ký khám bảo hiểm y tế ban đầu tại đây không?
+    - bệnh viện có hỗ trợ làm thủ tục cấp lại thẻ bảo hiểm y tế không?
+    - tôi có thể mua bảo hiểm y tế ở đâu?
+    - bảo hiểm y tế có bao gồm những loại khám nào?
+    - tôi có thể tìm hiểu thêm thông tin về bảo hiểm y tế ở đâu?
+    - tôi cần liên hệ với ai để được giải đáp thắc mắc về bảo hiểm y tế?
 
 - intent: Quy_trinh-BHYT_trai_tuyen
   examples: |
-    - Bệnh viện có nhận bảo hiểm trái tuyến không?
+    - Bệnh viện có chấp nhận bảo hiểm y tế ngoài tỉnh không?
+    - Bệnh viện có tiếp nhận bệnh nhân sử dụng bảo hiểm y tế trái tuyến không?
+    - Bệnh viện có nhận khám bệnh cho người có bảo hiểm y tế không cùng tuyến không?
+    - Tôi có thể sử dụng bảo hiểm y tế của tỉnh khác tại bệnh viện này được không?
+    - Mức hưởng bảo hiểm y tế trái tuyến tại bệnh viện là bao nhiêu?
+    - Thủ tục khám chữa bệnh bảo hiểm y tế trái tuyến như thế nào?
+    - Tôi cần mang theo giấy tờ gì khi khám bảo hiểm y tế trái tuyến?
+    - Bệnh viện có yêu cầu giấy chuyển viện khi khám bảo hiểm y tế trái tuyến không?
+    - Tôi có thể đăng ký khám bảo hiểm y tế ban đầu tại bệnh viện này dù không cùng tuyến được không?
+    - Bệnh viện có hỗ trợ làm thủ tục chuyển tuyến bảo hiểm y tế không?
+    - Nếu tôi khám bảo hiểm y tế trái tuyến, tôi có phải trả thêm chi phí nào không?
+    - Tôi có thể tìm hiểu thêm thông tin về bảo hiểm y tế trái tuyến ở đâu?
+    - Tôi nên liên hệ với ai để được giải đáp thắc mắc về bảo hiểm y tế trái tuyến tại bệnh viện?
 
 - intent: Quy_trinh-Hien_tang
   examples: |
-    - Mình muốn hiến tạng/hiến xác cho y học thì đăng ký như thế nào ạ?
+    - Tôi muốn đăng ký hiến tạng/hiến xác cho y học thì làm như thế nào?
+    - Thủ tục đăng ký hiến tạng/hiến xác cho y học là gì?
+    - Cách đăng ký hiến tạng/hiến xác cho y học như thế nào?
+    - Tôi có thể đăng ký hiến tạng/hiến xác ở đâu?
+    - Điều kiện để đăng ký hiến tạng/hiến xác là gì?
+    - Độ tuổi nào có thể đăng ký hiến tạng/hiến xác?
+    - Tôi cần chuẩn bị những giấy tờ gì để đăng ký hiến tạng/hiến xác?
+    - Gia đình tôi có cần đồng ý khi tôi đăng ký hiến tạng/hiến xác không?
+    - Sau khi đăng ký hiến tạng/hiến xác, tôi có cần làm gì nữa không?
+    - Tôi có thể hủy đăng ký hiến tạng/hiến xác không?
+    - Hiến tạng/hiến xác có vi phạm pháp luật không?
+    - Hiến tạng/hiến xác có ảnh hưởng đến tang lễ không?
+    - Tôi có thể tìm hiểu thêm thông tin về hiến tạng/hiến xác ở đâu?
+    - Tôi có thể liên hệ với ai để được tư vấn về hiến tạng/hiến xác?
+    - Hiến tạng/hiến xác có ý nghĩa như thế nào?
+    - Có những câu chuyện cảm động nào về hiến tạng/hiến xác không?
 
 - intent: Tu_van_dich_vu-Trung_tam_U_Mau_co_so_3
   examples: |
-    - Bé nhỏ muốn điều trị u máu? 
+    - Con tôi bị u máu, muốn điều trị thì phải làm sao?
+    - Trẻ em bị u máu cần điều trị như thế nào?
+    - Làm thế nào để điều trị u máu cho trẻ em?
+    - U máu ở trẻ em có nguy hiểm không?
+    - Bệnh viện có chuyên khoa điều trị u máu cho trẻ em không?
+    - Bác sĩ nào chuyên điều trị u máu ở trẻ em tại bệnh viện?
+    - Các phương pháp điều trị u máu ở trẻ em là gì?
+    - Chi phí điều trị u máu cho trẻ em là bao nhiêu?
+    - Bảo hiểm y tế có chi trả cho việc điều trị u máu không?
+    - Tôi cần chuẩn bị gì khi đưa con đi khám u máu?
+    - Tôi có thể đặt lịch khám cho con trực tuyến không?
+    - Sau khi điều trị u máu, trẻ cần được chăm sóc như thế nào?
+    - U máu có thể tái phát không?
+    - Tôi có thể tìm hiểu thêm thông tin về u máu ở trẻ em ở đâu?
+    - Bệnh viện có chương trình hỗ trợ điều trị u máu cho trẻ em không?
 
 - intent: Quy_trinh-Xe_cuu_thuong
   examples: |
-    - Làm thế nào để liên hệ và sử dụng dịch vụ vận chuyển cấp cứu của Bệnh viện Đại học Y Dược TPHCM?
+    - Gọi xe cấp cứu?
+    - Liên hệ với đội cấp cứu?
+    - Yêu cầu hỗ trợ y tế khẩn cấp?
+    - Gọi người cứu hộ?
+    - Gọi dịch vụ cấp cứu y tế?
+    - Cần xe cứu thương gấp?
+    - Gọi 115 ngay lập tức?
+    - Tôi cần hỗ trợ y tế khẩn cấp?
+    - Có người bị thương nặng, cần xe cấp cứu?
+    - Cần gọi cấp cứu?
+    - Xin hãy giúp đỡ, cần xe cấp cứu?
+    - Gọi bác sĩ nhanh lên?
+    - Có trường hợp khẩn cấp, cần xe cấp cứu?
+    - Cần sự trợ giúp của y tế ngay lập tức?
+    - Có người cần được sơ cứu?
+    - Tình hình nguy kịch, cần xe cấp cứu?
+    - Gọi đội cứu hộ y tế?
+    - Cần xe cấp cứu đến ngay?
+    - Xin hãy đến giúp đỡ, có người bị nạn?
 
 - intent: Mua_sach-Mua_Sieu_am_atlas
   examples: |
-    - Mình muốn mua cuốn Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương thì mua ở đâu ạ?
+    - Tôi muốn mua sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương, mua ở đâu?
+    - Làm sao để mua cuốn Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương?
+    - Mua sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương ở đâu?
+    - Sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương có bán tại bệnh viện không?
+    - Tôi có thể đặt mua sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương online không?
+    - Giá sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương là bao nhiêu?
+    - Sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương có phiên bản tiếng Anh không?
+    - Tôi có thể tìm mua sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương ở hiệu sách nào?
+    - Ngoài sách Siêu âm Atlas, Thầy Nguyễn Quang Thái Dương còn có những cuốn sách nào khác?
+    - Làm thế nào để liên hệ với nhà xuất bản sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương?
+    - Sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương có được giảm giá không?
+    - Tôi có thể mua sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương cũ không?
+    - Sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương có ebook không?
+    - Tôi có thể đọc thử sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương ở đâu?
+    - Ai nên đọc sách Siêu âm Atlas của Thầy Nguyễn Quang Thái Dương?
 
 - intent: Tu_van_dich_vu-Huong_dan_su_dung_thuoc
   examples: |
-    - Con mình đi khám về và đưa đơn thuốc, mình muốn cho con uống nhưng không hiểu rõ đơn cần gặp Bác sĩ hỏi phải làm sao?
+    - Tôi không hiểu đơn thuốc của con sau khi đi khám, cần gặp bác sĩ hỏi thế nào?
+    - Làm sao để hỏi bác sĩ về đơn thuốc của con tôi?
+    - Đơn thuốc của con tôi không rõ ràng, cần gặp bác sĩ hỏi như thế nào?
+    - Tôi có thể liên hệ với bác sĩ đã khám cho con tôi để hỏi về đơn thuốc bằng cách nào?
+    - Tôi muốn giải thích rõ hơn về đơn thuốc của con, tôi có thể gặp lại bác sĩ được không?
+    - Tôi có thể đặt lịch hẹn với bác sĩ để hỏi về đơn thuốc của con không?
+    - Bệnh viện có dịch vụ tư vấn về đơn thuốc không?
+    - Tôi có thể gửi ảnh đơn thuốc cho bác sĩ để hỏi không?
+    - Nếu tôi không thể đến bệnh viện, tôi có thể hỏi về đơn thuốc qua điện thoại hoặc email không?
+    - Tôi cần mang theo những gì khi đến gặp bác sĩ để hỏi về đơn thuốc?
+    - Bệnh viện có cung cấp dịch vụ phiên dịch đơn thuốc không?
+    - Chi phí cho việc tư vấn về đơn thuốc là bao nhiêu?
+    - Tôi có thể yêu cầu bác sĩ viết lại đơn thuốc rõ ràng hơn không?
+    - Ngoài bác sĩ, tôi có thể hỏi ai về đơn thuốc của con?
+    - Tôi nên làm gì nếu tôi nghi ngờ đơn thuốc của con bị sai?
 
 - intent: Tu_van_dich_vu-CMEs
   examples: |
-    - Mình muốn đăng ký học lớp căng chỉ thì phải làm sao? Bệnh viện có nhận đăng ký thực hành 18 tháng không?
+    - Mình muốn đăng ký học lớp căng chỉ thì phải làm sao?
+    - Bệnh viện có nhận đăng ký thực hành 18 tháng không?
+    - Bệnh viện có tổ chức lớp học căng chỉ không?
+    - Lịch khai giảng lớp căng chỉ tiếp theo là khi nào?
+    - Học phí của lớp căng chỉ là bao nhiêu?
+    - Thời gian học của lớp căng chỉ là bao lâu?
+    - Nội dung của lớp căng chỉ bao gồm những gì?
+    - Ai có thể tham gia lớp căng chỉ?
+    - Điều kiện để đăng ký học lớp căng chỉ là gì?
+    - Tôi cần chuẩn bị những gì để đăng ký học lớp căng chỉ?
+    - Tôi có thể đăng ký học lớp căng chỉ trực tuyến không?
+    - Bệnh viện có cấp chứng chỉ sau khi hoàn thành khóa học căng chỉ không?
+    - Có hỗ trợ việc làm sau khi học xong lớp căng chỉ không?
+    - Tôi có thể tìm hiểu thêm thông tin về lớp căng chỉ ở đâu?
+    - Tôi có thể liên hệ với ai để được tư vấn về lớp căng chỉ?
 
 - intent: Quy_trinh-Quy_trinh_kham_chua_benh
   examples: |
-    - Quy trình đặt hẹn khám bệnh như thế nào? 
+    - Cách đặt hẹn khám bệnh tại bệnh viện như thế nào?
+    - Thủ tục đặt hẹn khám bệnh ra sao?
+    - Làm sao để đặt hẹn khám bệnh?
+    - Tôi có thể đặt hẹn khám bệnh qua điện thoại không?
+    - Tôi có thể đặt hẹn khám bệnh trực tuyến không?
+    - Tôi có thể đặt hẹn khám bệnh qua ứng dụng di động không?
+    - Tôi cần cung cấp những thông tin gì khi đặt hẹn khám bệnh?
+    - Tôi có thể đặt hẹn khám bệnh cho người khác không?
+    - Tôi có thể chọn bác sĩ khi đặt hẹn khám bệnh không?
+    - Tôi có thể chọn ngày giờ khám bệnh khi đặt hẹn không?
+    - Tôi có thể thay đổi lịch hẹn khám bệnh không?
+    - Tôi cần làm gì nếu tôi đến trễ giờ hẹn khám bệnh?
+    - Tôi có thể hủy lịch hẹn khám bệnh không?
+    - Nếu tôi hủy lịch hẹn khám bệnh, tôi có được hoàn tiền không?
+    - Tôi có thể đặt hẹn khám bệnh vào cuối tuần hoặc ngày lễ không?
+    - Tôi có thể đặt hẹn khám bệnh cho nhiều người cùng lúc không?
+    - Tôi có thể đặt hẹn khám bệnh cho nhiều chuyên khoa khác nhau không?
+    - Tôi có thể yêu cầu dịch vụ khám bệnh tại nhà không?
+    - Tôi có thể tìm hiểu thêm thông tin về đặt hẹn khám bệnh ở đâu?
 
 - intent: Chi_phi-Chi_phi_va_phi_dich_vu_y_te_va_cham_soc_suc_khoe
   examples: |
-    - Tôi muốn biết chi phí khám chuyên khoa tại Bệnh viện là bao nhiêu?
+    - Tôi muốn biết chi phí khám chuyên khoa của Bệnh viện?
+    - Tôi muốn hỏi về chi phí khám chuyên khoa tại Bệnh viện?
+    - Tôi muốn tìm hiểu về giá khám chuyên khoa ở Bệnh viện?
+    - Xin cho tôi biết chi phí khám chuyên khoa của Bệnh viện?
+    - Tôi muốn biết giá dịch vụ khám chuyên khoa ở Bệnh viện?
+    - Tôi cần biết chi phí để khám chuyên khoa tại Bệnh viện?
+    - Làm ơn cho tôi thông tin về giá khám chuyên khoa tại Bệnh viện?
+    - Tôi cần tìm hiểu chi phí khám chuyên khoa của Bệnh viện?
+    - Chi phí khám chuyên khoa tại Bệnh viện là bao nhiêu?
+    - Giá khám chuyên khoa ở Bệnh viện như thế nào?
+    - Tôi muốn biết chi phí khám chuyên khoa ở Bệnh viện là bao nhiêu?
 
 - intent: Quy_trinh-Kham_suc_khoe_tong_quat_va_dinh_ky
   examples: |
     - Tôi muốn biết chi phí các loại khám tổng quát tại Bệnh viện là bao nhiêu?
+    - Xin cho tôi biết giá khám tổng quát tại Bệnh viện?
+    - Tôi cần thông tin về chi phí các hình thức khám tổng quát ở Bệnh viện?
+    - Cho tôi hỏi về các loại khám tổng quát và chi phí tại Bệnh viện?
+    - Tôi muốn biết giá các dịch vụ khám tổng quát ở Bệnh viện?
+    - Các hình thức khám tổng quát tại Bệnh viện có mức chi phí như thế nào?
+    - Tôi cần biết giá các dịch vụ khám tổng quát của Bệnh viện?
+    - Xin thông tin về chi phí khám tổng quát ở Bệnh viện?
+    - Tôi muốn tìm hiểu chi phí khám tổng quát tại Bệnh viện là bao nhiêu?
+    - Các loại khám tổng quát ở Bệnh viện có chi phí ra sao?
+    - Bệnh viện có các gói khám tổng quát nào?
+    - Gói khám tổng quát cơ bản bao gồm những gì?
+    - Gói khám tổng quát nâng cao bao gồm những gì?
+    - Chi phí khám tổng quát có bao gồm chi phí xét nghiệm không?
+    - Chi phí khám tổng quát có bao gồm chi phí siêu âm không?
+    - Tôi có thể sử dụng bảo hiểm y tế để thanh toán chi phí khám tổng quát không?
+    - Có chương trình giảm giá nào cho khám tổng quát không?
+    - Tôi có thể đặt lịch khám tổng quát trực tuyến không?
+    - Tôi cần chuẩn bị gì trước khi đi khám tổng quát?
+    - Kết quả khám tổng quát có được gửi về nhà không?
 
 - intent: Tu_van_dich_vu-Tu_van_tiem_chung_va_phong_ngua_benh
   examples: |
-    - Bạn cho biết chi phí tiêm vaccine HPV là bao nhiêu?
+    - Xin thông tin về giá tiêm vaccine HPV?
+    - Tôi cần tìm hiểu về chi phí tiêm HPV?
+    - Cho tôi biết giá tiêm vaccine HPV là bao nhiêu tiền?
+    - Xin hỏi chi phí tiêm vaccine HPV ở đây là bao nhiêu?
+    - Giá tiêm phòng HPV là bao nhiêu?
+    - Chi phí tiêm chủng HPV là bao nhiêu?
+    - Tiêm ngừa HPV hết bao nhiêu tiền?
+    - Giá vaccine HPV bao nhiêu một mũi?
+    - Bảng giá tiêm HPV như thế nào?
+    - Giá tiêm HPV 9 giá là bao nhiêu?
+    - Giá tiêm HPV 4 giá là bao nhiêu?
+    - Giá tiêm HPV 2 giá là bao nhiêu?
+    - Tiêm HPV có được bảo hiểm y tế chi trả không?
+    - Có chương trình ưu đãi nào khi tiêm HPV không?
+    - Tôi có thể đặt lịch tiêm HPV online được không?
+    - Tôi cần lưu ý gì trước khi tiêm HPV?
+    - Tiêm HPV có tác dụng phụ gì không?
+    - Sau khi tiêm HPV cần kiêng gì?
 
 - intent: Chi_phi-Bang_gia_va_danh_muc_dich_vu_tiem_chung_va_tiem_ngua
   examples: |
+    - Bảng giá tiêm chủng ở đây như thế nào?
     - Xin cho tôi biết chi tiết về bảng giá tiêm chủng tại bệnh viện này?
-
-
-
+    - Bảng giá tiêm vaccine ở đây có những mục giá nào?
+    - Tôi muốn xem bảng giá tiêm phòng bệnh ở đây?
+    - Bảng giá tiêm chích ngừa tại phòng khám này là bao nhiêu?
+    - Tôi cần biết bảng giá dịch vụ chăm sóc sức khỏe tiêm ngừa?
+    - Bảng giá tiêm vaccine tại đây có tính phí theo liều hay không?
+    - Bảng giá tiêm ngừa bệnh ở đây có cập nhật mới nhất không?
+    - Xin hỏi bảng giá tiêm bảo vệ ở bệnh viện này?
+    - Bảng giá tiêm vaccine phòng chống bệnh dịch có thay đổi không?
+    - Tôi cần thông tin về danh mục giá tiêm chống dịch tại đây?
+    - Bảng giá chích ngừa vaccine ở đây được áp dụng như thế nào?
+    - Tôi muốn biết bảng giá tiêm vắc-xin tại các trung tâm y tế công cộng?
+    - Xin cho tôi biết danh sách giá tiêm vaccine tại các phòng khám?
+    - Bảng giá tiêm phòng bệnh tại đây có điều chỉnh thường xuyên không?
+    - Tôi cần xem danh sách giá tiêm vaccine mới nhất?
+    - Bảng giá tiêm ngừa bệnh được đăng tải trên website của bệnh viện chưa?
+    - Tôi muốn biết bảng giá chích ngừa vaccine ở các bệnh viện lớn?
+    - Xin cho tôi biết bảng giá tiêm vắc-xin tại các phòng khám tư nhân?
+    - Bảng giá phòng bệnh tiêm vaccine ở đây có sự khác biệt so với các nơi khác không?
+    - Giá tiêm vaccine 5 trong 1 là bao nhiêu?
+    - Giá tiêm vaccine sởi là bao nhiêu?
+    - Giá tiêm vaccine phòng ung thư cổ tử cung là bao nhiêu?
+    - Giá tiêm vaccine cúm mùa là bao nhiêu?
+    - Có chương trình giảm giá nào cho tiêm chủng không?
+    - Tôi có thể thanh toán bằng thẻ bảo hiểm y tế khi tiêm chủng không?
+    - Tôi cần đặt lịch hẹn trước khi đến tiêm chủng không?
+    - Tôi có thể tìm thấy bảng giá tiêm chủng ở đâu?
+    - Tôi có thể được tư vấn về tiêm chủng miễn phí không?
 
 - intent: Tu_van_chuyen_khoa-Kham_Ung_buou
   examples: |
-    - Làm thế nào để đăng ký khám tại phòng khám Ung bướu của Bệnh viện và đặt lịch trực tuyến?
+    - Tôi bị loại ung thư nào?
+    - Giai đoạn của ung thư của tôi là gì?
+    - Các triệu chứng của ung thư này là gì?
+    - Ung thư của tôi có di căn chưa?
+    - Ung thư của tôi có thể chữa khỏi được không?
+    - Các phương pháp điều trị ung thư của tôi là gì?
+    - Tác dụng phụ của các phương pháp điều trị ung thư là gì?
+    - Tôi nên chuẩn bị gì cho quá trình điều trị ung thư?
+    - Tôi có thể làm gì để kiểm soát các triệu chứng của ung thư?
+    - Tôi nên thay đổi lối sống như thế nào sau khi được chẩn đoán ung thư?
+    - Tôi có thể tìm kiếm sự hỗ trợ ở đâu?
+    - Tôi có thể tham gia vào các thử nghiệm lâm sàng không?
+    - Tôi có thể làm gì để phòng ngừa ung thư tái phát?
+    - Tôi nên nói chuyện với gia đình và bạn bè về ung thư của mình như thế nào?
+    - Tôi có thể tìm hiểu thêm thông tin về ung thư của mình ở đâu?
+    - Ung thư của tôi ảnh hưởng như thế nào đến tuổi thọ của tôi?
+    - Tôi có thể tiếp tục làm việc trong quá trình điều trị ung thư không?
+    - Tôi có thể du lịch trong quá trình điều trị ung thư không?
+    - Tôi có thể mang thai sau khi điều trị ung thư không?
+    - Tôi có thể hiến tạng sau khi điều trị ung thư không?
+    - Ai có thể giúp tôi đưa ra quyết định về điều trị ung thư?
 
 - intent: Tu_van_dich_vu-Noi_soi
   examples: |
-    - Xin cho tôi biết chi tiết về bảng giá tiêm chủng tại bệnh viện này?
+    - Nội soi là gì?
+    - Tôi cần chuẩn bị gì trước khi thực hiện nội soi?
+    - Quy trình nội soi như thế nào?
+    - Thời gian thực hiện nội soi là bao lâu?
+    - Tôi có thể cảm thấy đau hoặc khó chịu không?
+    - Tác dụng phụ của nội soi là gì?
+    - Sau khi nội soi, tôi cần làm gì để hồi phục?
+    - Nội soi có an toàn không?
+    - Có cần gây mê khi thực hiện nội soi không?
+    - Tôi cần nghỉ ngơi bao lâu sau khi nội soi?
+    - Có những loại nội soi nào tôi có thể thực hiện?
+    - Nội soi có thể phát hiện những bệnh gì?
+    - Sinh thiết qua nội soi là gì?
+    - Có phải làm xét nghiệm nào khác sau nội soi không?
+    - Tôi cần phải nhịn ăn trước khi thực hiện nội soi bao lâu?
+    - Nội soi có thể giúp điều trị bệnh không?
+    - Tôi có thể trở lại công việc ngay sau khi thực hiện nội soi không?
+    - Chi phí thực hiện nội soi là bao nhiêu?
+    - Bảo hiểm có chi trả cho chi phí nội soi không?
+    - Có nguy cơ biến chứng nào liên quan đến nội soi không?
+    - Kết quả nội soi sẽ có sau bao lâu?
+    - Tôi có cần phải thực hiện nội soi định kỳ không?
+    - Có nhóm hỗ trợ nào để tôi có thể tìm hiểu thêm về nội soi không?
+    - Quy trình kiểm tra bên trong cơ thể là gì?
+    - Tôi cần chuẩn bị gì trước khi thực hiện kiểm tra qua ống soi?
+    - Quy trình thực hiện kiểm tra qua ống soi như thế nào?
+    - Thời gian thực hiện kiểm tra qua ống soi là bao lâu?
+    - Tôi có thể cảm thấy đau hoặc khó chịu không trong quá trình kiểm tra qua ống soi?
+    - Tác dụng phụ của kiểm tra qua ống soi là gì?
+    - Sau khi thực hiện kiểm tra qua ống soi, tôi cần làm gì để hồi phục?
+    - Kiểm tra qua ống soi có an toàn không?
+    - Có cần gây mê khi thực hiện kiểm tra qua ống soi không?
+    - Tôi cần nghỉ ngơi bao lâu sau khi thực hiện kiểm tra qua ống soi?
+    - Có những loại kiểm tra qua ống soi nào tôi có thể thực hiện?
+    - Kiểm tra qua ống soi có thể phát hiện những bệnh gì?
+    - Sinh thiết thông qua kiểm tra ống soi là gì?
+    - Có cần làm xét nghiệm nào khác sau kiểm tra qua ống soi không?
+    - Tôi cần phải nhịn ăn trước khi thực hiện kiểm tra qua ống soi bao lâu?
+    - Kiểm tra qua ống soi có thể giúp điều trị bệnh không?
+    - Tôi có thể trở lại công việc ngay sau khi thực hiện kiểm tra qua ống soi không?
+    - Chi phí thực hiện kiểm tra qua ống soi là bao nhiêu?
+    - Bảo hiểm có chi trả cho chi phí kiểm tra qua ống soi không?
+    - Có nguy cơ biến chứng nào liên quan đến kiểm tra qua ống soi không?
+    - Kết quả kiểm tra qua ống soi sẽ có sau bao lâu?
+    - Tôi có cần phải thực hiện kiểm tra qua ống soi định kỳ không?
+    - Có nhóm hỗ trợ nào để tôi có thể tìm hiểu thêm về kiểm tra qua ống soi không?
+    - Phương pháp kiểm tra qua ống soi có phải là lựa chọn tốt nhất cho trường hợp của tôi không?
+    - Có cần phải dùng thuốc trước khi thực hiện kiểm tra qua ống soi không?
+    - Kết quả kiểm tra qua ống soi có được giải thích ngay sau khi thực hiện không?
+    - Tôi có thể ăn uống bình thường sau khi kiểm tra qua ống soi không?
+    - Tôi có cần thực hiện các xét nghiệm khác để xác nhận kết quả của kiểm tra qua ống soi không?
+    - Có phương pháp kiểm tra nào ít xâm lấn hơn không?
+    - Thời gian hồi phục sau kiểm tra qua ống soi có lâu không?
+    - Phương pháp kiểm tra qua ống soi có thể phát hiện các bệnh không liên quan đến tiêu hóa không?
+    - Có cần phải thực hiện nhiều lần kiểm tra qua ống soi không?
+    - Có cần phải thay đổi chế độ ăn uống sau khi thực hiện kiểm tra qua ống soi không?
 
 - intent: Tu_van_dich_vu-Cat_thang_luoi_cho_be
   examples: |
-    - Bé muốn cắt thắng lưỡi? 
+    - Bé muốn cắt thắng lưỡi?
+    - Bé nhà tôi bị dính thắng lưỡi, cần cắt không?
+    - Cắt thắng lưỡi cho bé ở đâu?
+    - Chi phí cắt thắng lưỡi cho bé là bao nhiêu?
+    - Cắt thắng lưỡi cho bé có đau không?
+    - Cắt thắng lưỡi cho bé có ảnh hưởng gì không?
+    - Độ tuổi nào thì nên cắt thắng lưỡi cho bé?
+    - Quy trình cắt thắng lưỡi cho bé như thế nào?
+    - Sau khi cắt thắng lưỡi cho bé cần lưu ý gì?
+    - Cắt thắng lưỡi cho bé có cần gây mê không?
+    - Bác sĩ nào chuyên cắt thắng lưỡi cho bé ở bệnh viện?
+    - Tôi có thể đặt lịch cắt thắng lưỡi cho bé trực tuyến không?
+    - Bảo hiểm y tế có chi trả cho việc cắt thắng lưỡi không?
+    - Tôi có thể tìm hiểu thêm thông tin về cắt thắng lưỡi cho bé ở đâu?
+    - Cắt thắng lưỡi có giúp bé nói rõ hơn không?
 
 - intent: Tu_van_dich_vu-Chuyen_huong_kham_tong_quat_hoac_theo_trieu_chung_do_phong_kham_hau_COVID_da_ngung_hoat_dong
   examples: |
-    -  Khám hậu Covid khám phòng khám nào? 
+    - Tôi muốn khám hậu Covid thì khám ở đâu?
+    - Khám sau khi bị Covid thì đến khoa nào?
+    - Bị Covid xong muốn đi khám thì đăng ký khám ở đâu?
+    - Bệnh viện có khám cho những người đã khỏi Covid không?
+    - Tôi đã khỏi Covid rồi, giờ muốn kiểm tra sức khỏe thì khám thế nào?
+    - Khám hậu Covid có cần đặt lịch trước không?
+    - Chi phí khám hậu Covid là bao nhiêu?
+    - Các xét nghiệm cần thiết khi khám hậu Covid là gì?
+    - Bệnh viện có gói khám hậu Covid không?
+    - Tôi có thể sử dụng bảo hiểm y tế để khám hậu Covid không?
+    - Triệu chứng hậu Covid thường gặp là gì?
+    - Bệnh viện có điều trị các di chứng hậu Covid không?
+    - Tôi cần lưu ý gì khi khám hậu Covid?
+    - Tôi nên khám hậu Covid sau bao lâu khỏi bệnh?
+    - Tôi có thể tìm hiểu thêm thông tin về khám hậu Covid ở đâu?
 
 - intent: Tu_van_dich_vu-Mat_le
   examples: |
-    - Bệnh viện Đại học Y Dược TPHCM có điều trị mắt lé không? 
+    - Bệnh viện có khám mắt lé không?
+    - Bệnh viện mình có chữa lé mắt không?
+    - Ở đây có chữa lác mắt không?
+    - BV ĐHYD có điều trị lé mắt không ạ?
+    - Cho em hỏi bệnh viện có khoa mắt lé không?
+    - Tôi muốn khám mắt lé thì đến đây có được không?
+    - Bệnh viện có tiếp nhận bệnh nhân bị lé mắt không?
+    - Bác sĩ nào chuyên điều trị lé mắt ở bệnh viện?
+    - Chi phí khám và điều trị lé mắt là bao nhiêu?
+    - Bệnh viện có áp dụng phương pháp phẫu thuật lé mắt không?
+    - Thời gian điều trị lé mắt kéo dài bao lâu?
+    - Có những phương pháp điều trị lé mắt nào?
+    - Lé mắt có thể chữa khỏi hoàn toàn không?
+    - Tôi cần chuẩn bị gì trước khi đến khám lé mắt?
+    - Tôi có thể đặt lịch khám lé mắt trực tuyến không?
+    - Bảo hiểm y tế có chi trả cho việc điều trị lé mắt không?
 
 - intent: Tu_van_dich_vu-HIV
   examples: |
-    - Bệnh viện có xét nghiệm HIV không? 
+    - Ở bệnh viện có làm xét nghiệm HIV không?
+    - Tôi muốn kiểm tra HIV thì làm ở đâu?
+    - Bệnh viện có dịch vụ thử máu HIV không?
+    - Muốn tầm soát HIV thì đến khoa nào?
+    - Làm xét nghiệm HIV ở bệnh viện có bảo mật không?
+    - Chi phí xét nghiệm HIV là bao nhiêu?
+    - Tôi cần chuẩn bị gì trước khi xét nghiệm HIV?
+    - Kết quả xét nghiệm HIV khi nào có?
+    - Tôi có thể đặt lịch xét nghiệm HIV trước không?
+    - Xét nghiệm HIV có những phương pháp nào?
+    - Xét nghiệm HIV nhanh có chính xác không?
+    - Nếu tôi có kết quả xét nghiệm HIV dương tính thì sao?
+    - Bệnh viện có tư vấn và điều trị HIV không?
+    - Tôi có thể sử dụng bảo hiểm y tế để chi trả cho xét nghiệm HIV không?
+    - Tôi có thể tìm hiểu thêm thông tin về HIV ở đâu?
 
 - intent: Tu_van_dich_vu-Di_ung
   examples: |
-    - Xét nghiệm tìm ra dị ứng  
+    - Làm sao để biết mình bị dị ứng gì?
+    - Tôi muốn xét nghiệm dị ứng thì phải làm sao?
+    - Bệnh viện có làm xét nghiệm dị ứng không?
+    - Tôi muốn kiểm tra xem mình bị dị ứng gì?
+    - Làm thế nào để tìm ra nguyên nhân gây dị ứng?
+    - Xét nghiệm dị ứng có những loại nào?
+    - Chi phí xét nghiệm dị ứng là bao nhiêu?
+    - Tôi cần chuẩn bị gì trước khi xét nghiệm dị ứng?
+    - Quy trình xét nghiệm dị ứng như thế nào?
+    - Khi nào tôi có kết quả xét nghiệm dị ứng?
+    - Kết quả xét nghiệm dị ứng có ý nghĩa gì?
+    - Tôi nên làm gì nếu tôi bị dị ứng?
+    - Bệnh viện có bác sĩ chuyên khoa dị ứng không?
+    - Tôi có thể đặt lịch xét nghiệm dị ứng trực tuyến không?
+    - Tôi có thể sử dụng bảo hiểm y tế để chi trả cho xét nghiệm dị ứng không?
 
 - intent: Quy_trinh-Noi_soi
   examples: |
-    - Truớc khi nội sôi dạ dày cần nhịn ăn bao lâu ạ 
+    - Chuẩn bị nội soi dạ dày thì nhịn ăn mấy tiếng?
+    - Trước khi soi dạ dày phải nhịn ăn bao lâu?
+    - Nội soi tiêu hóa thì nhịn ăn uống trong bao lâu?
+    - Cần nhịn ăn bao lâu trước khi nội soi bao tử?
+    - Nhịn ăn bao nhiêu tiếng trước khi nội soi dạ dày là đủ?
+    - Nội soi dạ dày có cần nhịn uống nước không?
+    - Tôi có thể uống thuốc trước khi nội soi dạ dày không?
+    - Nếu tôi ăn uống trước khi nội soi dạ dày thì sao?
+    - Nội soi dạ dày có đau không?
+    - Nội soi dạ dày mất bao lâu?
+    - Tôi cần chuẩn bị gì trước khi nội soi dạ dày?
+    - Sau khi nội soi dạ dày tôi có thể ăn uống bình thường không?
+    - Tôi cần lưu ý gì sau khi nội soi dạ dày?
+    - Khi nào tôi có kết quả nội soi dạ dày?
+    - Nếu tôi có thắc mắc về nội soi dạ dày, tôi nên hỏi ai?
 
 - intent: Quy_trinh-Toa_thuoc
   examples: |
-    - Tôi không tái khám được, có thể nhờ người thân mua thuốc theo toa thuốc cũ không?
+    - Tôi muốn mua thuốc theo toa cũ được không?
+    - Có thể lấy thuốc theo đơn thuốc trước đó không?
+    - Người nhà lấy thuốc thay có được không?
+    - Không đi khám lại có mua được thuốc theo toa cũ không?
+    - Bệnh viện có cho mua thuốc theo toa cũ không?
+    - Đơn thuốc của tôi hết hạn chưa?
+    - Tôi có thể mua thuốc theo toa cũ nếu quá hạn không?
+    - Tôi cần mang gì để mua thuốc theo toa cũ?
+    - Nếu tôi muốn mua thêm thuốc thì phải làm sao?
+    - Tôi có thể mua thuốc theo toa cũ ở bất kỳ hiệu thuốc nào không?
+    - Tôi có cần phải đặt lịch hẹn trước để mua thuốc theo toa cũ không?
+    - Nếu bác sĩ kê đơn thuốc mới, tôi có thể mua cả hai loại thuốc cùng lúc không?
+    - Có giới hạn số lượng thuốc tôi có thể mua theo toa cũ không?
+    - Tôi có thể mua thuốc theo toa cũ nếu đơn thuốc bị mất không?
+    - Nếu tôi có thắc mắc về việc mua thuốc theo toa cũ, tôi nên liên hệ với ai?
 
 - intent: Tu_van_dich_vu-Thay_toa_thuoc_phu_hop_co_dia
   examples: |
-    - Mình uống thuốc đơn Bác sĩ kê bị chóng mặt và mệt. Cho hỏi có thể thay bằng thuốc gì?
+    - tôi uống thuốc theo toa của bác sĩ nhưng bị chóng mặt và mệt mỏi. Tôi có thể đổi sang thuốc khác không?
+    - Sau khi dùng thuốc bác sĩ kê, tôi cảm thấy chóng mặt và mệt. Có thuốc nào thay thế không?
+    - tôi bị chóng mặt và mệt mỏi sau khi uống thuốc do bác sĩ kê. Có thể thay thuốc bằng loại khác không?
+    - thuốc bác sĩ kê cho tôi làm tôi bị chóng mặt và mệt. Tôi nên thay bằng thuốc gì?
+    - tôi cảm thấy chóng mặt và mệt khi uống thuốc từ bác sĩ. Có thuốc thay thế nào không?
+    - sau khi dùng thuốc theo toa của bác sĩ, tôi bị chóng mặt và mệt mỏi. Có thể chuyển sang thuốc khác không?
+    - tôi cảm thấy mệt mỏi và chóng mặt khi dùng thuốc bác sĩ kê. Có thể thay thuốc bằng loại khác không?
+    - thuốc bác sĩ kê cho tôi gây chóng mặt và mệt. Có thể thay thuốc bằng loại khác không?
+    - tôi bị chóng mặt và mệt mỏi sau khi uống thuốc theo chỉ định của bác sĩ. Có thuốc thay thế nào không?
+    - uống thuốc bác sĩ kê làm tôi cảm thấy mệt và chóng mặt. Tôi có thể thay bằng thuốc khác không?
+    - sau khi dùng thuốc theo đơn của bác sĩ, tôi bị chóng mặt và mệt mỏi. Có thể thay thế bằng thuốc khác không?
+    - tôi bị mệt mỏi và chóng mặt khi uống thuốc bác sĩ kê. Có thuốc nào khác mà tôi có thể sử dụng không?
+    - thuốc bác sĩ kê cho tôi gây ra chóng mặt và mệt. Tôi có thể đổi thuốc không?
+    - tôi cảm thấy chóng mặt và mệt sau khi dùng thuốc bác sĩ kê. Có thể thay đổi thuốc bằng loại khác không?
+    - sau khi uống thuốc theo toa của bác sĩ, tôi bị chóng mặt và mệt mỏi. Có thể sử dụng thuốc khác thay thế không?
+    - tôi nên báo cáo tác dụng phụ này cho bác sĩ như thế nào?
+    - liệu có những tác dụng phụ khác mà tôi cần lưu ý không?
+    - tôi có nên ngừng uống thuốc ngay lập tức không?
+    - có những lựa chọn điều trị thay thế nào cho tình trạng của tôi không?
+    - tôi có thể làm gì để giảm thiểu tác dụng phụ chóng mặt và mệt mỏi?
+    - khi nào tôi nên quay lại gặp bác sĩ để kiểm tra?
+    - tôi có thể dùng thuốc không kê đơn nào để giảm bớt triệu chứng trong thời gian chờ đợi không?
+    - tôi có cần phải làm thêm xét nghiệm nào để xác định nguyên nhân gây ra tác dụng phụ không?
+    - liệu các loại thuốc khác mà tôi đang dùng có thể tương tác với loại thuốc này không?
 
 - intent: Tu_van_dich_vu-Dieu_tri_noi_tru
   examples: |
-    - Mình muốn nhập viện mổ thay khớp thì làm sao?
+    - tôi muốn vào viện để phẫu thuật thay khớp. Tôi cần làm gì?
+    - tôi cần nhập viện để thực hiện phẫu thuật thay khớp. Các bước cần theo là gì?
+    - làm thế nào để tôi nhập viện và thực hiện ca mổ thay khớp?
+    - tôi muốn thực hiện phẫu thuật thay khớp tại bệnh viện. Tôi cần chuẩn bị gì?
+    - tôi muốn vào viện để thay khớp. Quy trình nhập viện và phẫu thuật như thế nào?
+    - tôi cần làm gì để nhập viện và thực hiện phẫu thuật thay khớp?
+    - tôi có ý định vào viện để mổ thay khớp. Tôi phải làm các thủ tục gì?
+    - tôi muốn nhập viện để thay khớp. Các bước cần thực hiện để chuẩn bị cho ca mổ là gì?
+    - tôi muốn phẫu thuật thay khớp tại bệnh viện. Tôi nên bắt đầu từ đâu?
+    - tôi cần vào viện để phẫu thuật thay khớp. Có các bước nào cần thực hiện không?
 
 - intent: Tu_van_dich_vu-Tu_van_chuyen_khoa
   examples: |
-    - Xem thông tin bệnh
+    - tra cứu thông tin về bệnh?
+    - xem dữ liệu về bệnh lý?
+    - tìm hiểu thông tin về bệnh?
+    - đọc thông tin về bệnh?
+    - xem các chi tiết về bệnh?
+    - khám phá thông tin bệnh lý?
+    - xem thông tin liên quan đến bệnh?
+    - đọc dữ liệu về tình trạng bệnh?
+    - tham khảo thông tin về bệnh?
+    - xem thông tin liên quan đến bệnh lý?
+    - tìm kiếm thông tin bệnh?
+    - nghiên cứu về bệnh?
+    - tìm hiểu về triệu chứng bệnh?
+    - đọc về nguyên nhân gây bệnh?
+    - xem thông tin về cách điều trị bệnh?
+    - tìm hiểu về biến chứng của bệnh?
+    - đọc về cách phòng ngừa bệnh?
+    - xem thông tin về chế độ dinh dưỡng cho người bệnh?
+    - tìm hiểu về các loại thuốc điều trị bệnh?
+    - đọc về kinh nghiệm của người bệnh?
+    - tra cứu thông tin y khoa về bệnh?
+    - tìm hiểu về các nghiên cứu mới nhất về bệnh?
+    - xem thông tin về các chuyên gia điều trị bệnh?
+    - đọc về các phương pháp chẩn đoán bệnh?
+    - tìm hiểu về các yếu tố nguy cơ gây bệnh?
+    - xem thông tin về các bệnh liên quan?
+    - đọc về các bài viết chia sẻ về bệnh?
+    - tìm hiểu về các tổ chức hỗ trợ người bệnh?
+    - xem thông tin về các hội thảo về bệnh?
+    - đọc về các câu hỏi thường gặp về bệnh?
 
 - intent: Tu_van_dich_vu-Tu_van_goi_sinh
   examples: |
-    - Bệnh viện có những gói sinh nào?
+    - bệnh viện cung cấp các gói sinh gì?
+    - các gói dịch vụ sinh tại bệnh viện là gì?
+    - bệnh viện có các lựa chọn gói sinh nào?
+    - bệnh viện có những loại gói sinh nào?
+    - bệnh viện cung cấp những gói dịch vụ sinh nào?
+    - các gói sinh con tại bệnh viện gồm những gì?
+    - bệnh viện có các chương trình gói sinh nào?
+    - những gói sinh mà bệnh viện cung cấp là gì?
+    - bệnh viện có các tùy chọn gói sinh nào?
+    - các gói sinh hiện có tại bệnh viện là gì?
+    - gói sinh thường giá bao nhiêu?
+    - gói sinh mổ giá bao nhiêu?
+    - các gói sinh bao gồm những dịch vụ gì?
+    - có gói sinh trọn gói không?
+    - tôi có thể lựa chọn bác sĩ trong gói sinh không?
+    - gói sinh có bao gồm chi phí phòng nghỉ không?
+    - gói sinh có bao gồm chi phí thuốc men không?
+    - tôi có thể tìm hiểu chi tiết về các gói sinh ở đâu?
+    - tôi có thể đăng ký gói sinh khi nào?
+    - có ưu đãi gì khi đăng ký gói sinh sớm không?
 
 - intent: Tu_van_dich_vu-Tu_van_dich_vu_sinh
   examples: |
-    - Mình có nhu cầu sính mổ chủ động BV có thể tư vấn dùm mình
+    - tôi muốn thực hiện sinh mổ chủ động, bệnh viện có thể cung cấp tư vấn cho tôi không?
+    - tôi có nhu cầu sinh mổ chủ động, bệnh viện có thể hướng dẫn tôi được không?
+    - tôi cần thông tin về sinh mổ chủ động, bệnh viện có thể tư vấn cho tôi không?
+    - bệnh viện có thể giúp tôi tư vấn về sinh mổ chủ động không?
+    - tôi dự định sinh mổ chủ động, bệnh viện có thể hỗ trợ tư vấn cho tôi không?
+    - tôi có ý định thực hiện sinh mổ chủ động, bệnh viện có thể cung cấp thông tin cho tôi không?
+    - tôi cần tư vấn về việc sinh mổ chủ động, bệnh viện có thể hỗ trợ tôi được không?
+    - bệnh viện có thể hướng dẫn tôi về dịch vụ sinh mổ chủ động không?
+    - tôi muốn biết thêm về sinh mổ chủ động, bệnh viện có thể tư vấn cho tôi không?
+    - tôi có nhu cầu sinh mổ chủ động, bệnh viện có thể cung cấp sự tư vấn cần thiết không?
+    - điều kiện để được sinh mổ chủ động là gì?
+    - chi phí sinh mổ chủ động tại bệnh viện là bao nhiêu?
+    - quy trình sinh mổ chủ động diễn ra như thế nào?
+    - sinh mổ chủ động có những ưu điểm và nhược điểm gì?
+    - những rủi ro có thể xảy ra khi sinh mổ chủ động là gì?
+    - sau khi sinh mổ chủ động cần lưu ý những gì?
+    - tôi cần chuẩn bị gì trước khi sinh mổ chủ động?
+    - bác sĩ nào sẽ thực hiện ca sinh mổ chủ động cho tôi?
+    - tôi có thể lựa chọn ngày giờ sinh mổ chủ động không?
 
 - intent: Tu_van_dich_vu-Dich_vu_pha_thai
   examples: |
-    - Cho hỏi Bệnh viện có phá thai không?
+    - Bệnh viện có làm dịch vụ bỏ thai không?
+    - Bệnh viện có thực hiện đình chỉ thai không?
+    - Ở đây có làm thủ thuật hút thai không?
+    - Tôi muốn hỏi về dịch vụ nạo thai?
+    - Bệnh viện mình có tiếp nhận bỏ thai không?
+    - Tôi muốn tìm hiểu về việc đình chỉ thai nghén ở bệnh viện được không?
+    - Bệnh viện có dịch vụ phá thai an toàn không?
+    - Bệnh viện có hỗ trợ phá thai không?
+    - Bệnh viện có thực hiện các ca phá thai không?
+    - Chi phí phá thai tại bệnh viện là bao nhiêu?
+    - Thủ tục phá thai tại bệnh viện như thế nào?
+    - Tôi muốn phá thai thì cần chuẩn bị những gì?
+    - Bệnh viện có tư vấn về các phương pháp phá thai không?
+    - Bệnh viện có hỗ trợ tâm lý sau phá thai không?
+    - Có những rủi ro nào khi phá thai?
+    - Phá thai có ảnh hưởng đến sức khỏe sinh sản sau này không?
+    - Tôi cần lưu ý gì sau khi phá thai?
+    - Bệnh viện có cung cấp dịch vụ kế hoạch hóa gia đình không?
 
 - intent: Mua_sach-Mua_so_tay_Can_thiep_cham_soc_dieu_duong_
   examples: |
-    - Mình muốn mua cuốn Can thiệp chăm sóc điều dưỡng của BV
+    - Làm sao để mua được sách "Can thiệp chăm sóc điều dưỡng" của bệnh viện?
+    - Bệnh viện có bán sách "Can thiệp chăm sóc điều dưỡng" không?
+    - Tôi muốn tìm mua cuốn "Can thiệp chăm sóc điều dưỡng" của BV?
+    - Tôi muốn hỏi về cách thức mua tài liệu "Can thiệp chăm sóc điều dưỡng"?
+    - Bệnh viện có bán tài liệu hướng dẫn chăm sóc điều dưỡng không?
+    - Cho em hỏi về việc mua sách do bệnh viện phát hành?
+    - Tôi muốn đặt mua cuốn sách "Can thiệp chăm sóc điều dưỡng" thì liên hệ ở đâu?
+    - Làm thế nào để mua cuốn Can thiệp chăm sóc điều dưỡng của Bệnh viện?
+    - Tôi có thể mua sách Can thiệp chăm sóc điều dưỡng của Bệnh viện ở đâu?
+    - Cuốn sách Can thiệp chăm sóc điều dưỡng của Bệnh viện có bán ở đâu?
+    - Sách "Can thiệp chăm sóc điều dưỡng" của bệnh viện giá bao nhiêu?
+    - Tôi có thể mua sách "Can thiệp chăm sóc điều dưỡng" trực tuyến không?
+    - Bệnh viện có giao sách "Can thiệp chăm sóc điều dưỡng" tận nơi không?
+    - Tôi có thể đến trực tiếp bệnh viện để mua sách "Can thiệp chăm sóc điều dưỡng" được không?
+    - Sách "Can thiệp chăm sóc điều dưỡng" có phiên bản điện tử không?
+    - Ngoài sách "Can thiệp chăm sóc điều dưỡng", bệnh viện còn phát hành những ấn phẩm nào khác?
+    - Tôi có thể tìm hiểu thêm thông tin về sách "Can thiệp chăm sóc điều dưỡng" ở đâu?
 
 - intent: Quy_trinh-Kham_tai_Phong_kham_Quoc_te
   examples: |
-    - BV cho mình hỏi có khám dịch vụ không?
+    - Bệnh viện có khám dịch vụ không?
+    - Bệnh viện có cung cấp dịch vụ khám bệnh không?
+    - Bệnh viện có các dịch vụ khám bệnh nào?
+    - Bệnh viện có các loại hình khám dịch vụ không?
+    - Bệnh viện có dịch vụ khám chữa bệnh không?
+    - Bệnh viện có cung cấp các dịch vụ khám chữa bệnh không?
+    - Bệnh viện có khám dịch vụ theo yêu cầu không?
+    - Bệnh viện có khám ngoài giờ không?
+    - Bệnh viện có dịch vụ khám sức khỏe tổng quát không?
+    - Bệnh viện có khám chuyên khoa nào?
+    - Bệnh viện có khám bảo hiểm y tế không?
+    - Bệnh viện có khám cho người nước ngoài không?
+    - Bệnh viện có dịch vụ khám tại nhà không?
+    - Bệnh viện có gói khám sức khỏe nào?
+    - Bệnh viện có dịch vụ khám và điều trị bệnh gì?
 
 - intent: Chi_phi-Hoan_tien_dich_vu_can_lam_sang,_va_cac_dich_vu_dat_kham
   examples: |
-    - Cho hỏi mình cọc tiền nội soi rồi giờ không muốn nữa có hoàn tiền lại không ạ?
+    - Nếu tôi đã đặt cọc tiền nội soi nhưng không muốn làm nữa thì có được hoàn tiền không?
+    - Bệnh viện có hoàn tiền đặt cọc nội soi không nếu tôi hủy?
+    - Tôi đã cọc tiền nội soi, giờ không muốn nữa có thể hoàn lại tiền không?
+    - Nếu tôi đã đặt cọc cho dịch vụ nội soi nhưng không muốn làm nữa, có được hoàn tiền không?
+    - Tôi đã đặt cọc tiền cho nội soi, nếu không muốn làm nữa có thể lấy lại tiền không?
+    - Bệnh viện có hoàn lại tiền đặt cọc cho dịch vụ nội soi không nếu tôi hủy?
+    - Tôi muốn xin hóa đơn nộp cho bảo hiểm nhưng vẫn chưa nhận được, phải làm sao?
+    - Làm thế nào để tôi có thể nhận được hóa đơn nộp bảo hiểm mà chưa nhận được?
+    - Tôi chưa nhận được hóa đơn nộp bảo hiểm, cần phải làm gì?
+    - Tôi cần hóa đơn để nộp bảo hiểm nhưng vẫn chưa thấy, tôi phải làm sao?
+    - Làm cách nào để tôi có thể lấy hóa đơn bảo hiểm y tế?
+    - Tôi muốn xin cấp lại hóa đơn bảo hiểm y tế thì phải làm thế nào?
+    - Tôi đã thanh toán viện phí nhưng chưa nhận được hóa đơn, phải làm sao để lấy lại?
+    - Tôi muốn xin lại hóa đơn viện phí để nộp bảo hiểm thì phải làm gì?
+    - Tôi cần hóa đơn viện phí để nộp bảo hiểm, làm thế nào để tôi có thể nhận được?
 
 - intent: Chi_phi-Doi/Huy_ngay_kham
   examples: |
-    - Làm thế nào để đổi lịch khám và nhận hoàn tiền tại Bệnh viện?
+    - Tôi có thể đổi ngày khám sau khi đã đặt lịch không?
+    - Quy trình hủy lịch khám như thế nào?
+    - Nếu tôi hủy lịch khám, tôi có được hoàn tiền không?
+    - Thời gian hoàn tiền sau khi hủy lịch khám là bao lâu?
+    - Tôi có thể đặt lại lịch khám mới sau khi hủy lịch cũ không?
+    - Có mất phí khi hủy hoặc đổi lịch khám không?
+    - Tôi có thể đổi lịch khám sang ngày khác trong cùng tuần không?
+    - Tôi cần phải hủy lịch khám bao lâu trước ngày đã đặt?
+    - Làm cách nào để biết lịch khám mới đã được đặt thành công?
+    - Tôi có thể đổi lịch khám trực tuyến hay phải liên hệ trực tiếp?
+    - Tôi muốn dời lịch khám sang một ngày khác thì phải làm sao?
+    - Phí hủy lịch khám là bao nhiêu?
+    - Tôi có thể đổi bác sĩ khám sau khi đã đặt lịch không?
+    - Nếu tôi đến khám trễ thì có được khám không?
+    - Tôi có thể bảo lưu lịch khám để sử dụng sau này không?
+    - Làm thế nào để xác nhận lịch khám của tôi?
+    - Tôi có thể yêu cầu khám ngoài giờ hành chính không?
 
 - intent: Quy_trinh-Phat_hanh_hoa_don
   examples: |
-    - Mình muốn xin hóa đơn để nộp cho bảo hiểm, nhưng tới giờ chưa nhận được thì làm sao?
+    - Nếu tôi chưa nhận được hóa đơn để nộp cho bảo hiểm thì phải làm sao?
+    - Làm thế nào để tôi nhận được hóa đơn nộp bảo hiểm mà chưa nhận được?
+    - Tôi cần hóa đơn để nộp bảo hiểm nhưng chưa nhận được, phải làm gì?
+    - Tôi chưa có hóa đơn để nộp bảo hiểm y tế, tôi nên làm thế nào?
+    - Tôi cần làm gì để được cấp lại hóa đơn thanh toán bảo hiểm?
+    - Trường hợp chưa nhận được hóa đơn để hoàn bảo hiểm thì phải làm sao?
+    - Thủ tục xin cấp lại hóa đơn để nộp bảo hiểm như thế nào?
+    - Làm sao để tôi có thể lấy lại hóa đơn đã mất để nộp bảo hiểm?
 
 - intent: Tu_van_dich_vu-Tra_cuu_hoa_don
   examples: |
-    - Muốn tra cứu hóa đơn thì vào đâu?
+    - Tôi muốn tra cứu hóa đơn thì phải làm như thế nào?
+    - Làm sao để tra cứu hóa đơn của tôi?
+    - Để tra cứu hóa đơn, tôi nên truy cập ở đâu?
+    - Tôi có thể tra cứu hóa đơn ở đâu?
+    - Cách tra cứu hóa đơn như thế nào?
+    - Làm sao để tôi tìm được thông tin hóa đơn của mình?
+    - Tôi cần làm gì để xem hóa đơn của tôi?
+    - Quy trình tra cứu hóa đơn là gì?
+    - Tôi muốn kiểm tra hóa đơn của mình, làm thế nào?
+    - Xem hóa đơn đã thanh toán ở đâu?
+    - Tìm kiếm hóa đơn điện tử ở đâu?
+    - Tôi muốn xem lại hóa đơn, phải làm sao?
+    - Thông tin hóa đơn của tôi được lưu trữ ở đâu?
+    - Làm cách nào để tôi biết được chi tiết hóa đơn?
+    - Tôi có thể in lại hóa đơn của mình không, và làm như thế nào?
 
 - intent: Quy_trinh-Lich_kham_cua_Benh_vien
   examples: |
-    - Cho mình hỏi Bệnh viện có khám ngoài giờ, hay Thứ 7, Chủ Nhật không?
+    - Lịch khám của tôi là gì?
+    - Tôi cần đặt lịch khám như thế nào?
+    - Có thể kiểm tra lịch khám của tôi ở đâu?
+    - Tôi có thể thay đổi lịch khám không?
+    - Khi nào thì tôi có thể khám được?
+    - Thời gian chờ đợi để có lịch khám là bao lâu?
+    - Có cần phải hẹn trước khi đến khám không?
+    - Tôi có thể hủy lịch khám đã đặt không?
+    - Có cách nào để xem lịch khám của bác sĩ không?
+    - Lịch khám của bệnh viện có thay đổi không?
+    - Tôi có thể đặt lịch khám qua điện thoại không?
+    - Lịch khám có thể được xác nhận lại không?
+    - Tôi có thể biết lịch khám của các bác sĩ chuyên khoa không?
+    - Có dịch vụ nhắc lịch khám không?
+    - Có thể xem lịch khám online không?
+    - Lịch khám có bao gồm cả ngày cuối tuần không?
+    - Có thể thay đổi thời gian khám sau khi đã đặt không?
+    - Tôi cần mang theo giấy tờ gì khi đến khám theo lịch?
+    - Lịch khám của tôi có bị ảnh hưởng bởi các ngày nghỉ lễ không?
 
 - intent: Tu_van_dich_vu-Giao_thuoc_tai_nha
   examples: |
-    - Bệnh viện có dịch vụ giao thuốc tại nhà không? 
+    - Dịch vụ giao thuốc tận nhà có sẵn tại khu vực của tôi không?
+    - Tôi có cần cung cấp thông tin gì thêm để nhận thuốc tại nhà không?
+    - Có phải tôi trả thêm phí cho dịch vụ giao thuốc tận nhà không?
+    - Thời gian giao thuốc tận nhà là bao lâu?
+    - Tôi có thể kiểm tra tình trạng đơn hàng của mình ở đâu?
+    - Có cần ký nhận khi nhận thuốc không?
+    - Nếu tôi không có nhà, thuốc có được để lại ở đâu không?
+    - Dịch vụ giao thuốc tận nhà có hỗ trợ các loại thuốc kê đơn không?
+    - Tôi có thể thay đổi địa chỉ giao thuốc sau khi đã đặt hàng không?
+    - Có thể giao thuốc vào cuối tuần hoặc ngoài giờ làm việc không?
+    - Nếu tôi cần gấp, có thể yêu cầu giao thuốc khẩn cấp không?
+    - Giao thuốc tận nhà có đi kèm với tư vấn y tế không?
+    - Có cần đặt trước bao nhiêu ngày để nhận thuốc tại nhà?
+    - Tôi có thể trả tiền khi nhận thuốc không?
+    - Làm thế nào để biết thuốc đã được giao thành công?
+    - Dịch vụ giao thuốc tận nhà có phục vụ các khu vực nông thôn không?
+    - Có hạn chế gì về loại thuốc có thể giao tận nhà không?
+    - Có chương trình giảm giá hoặc khuyến mãi cho dịch vụ giao thuốc không?
+    - Tôi có thể hủy đơn hàng sau khi đã đặt không?
+    - Nếu thuốc bị hư hỏng trong quá trình giao, tôi nên làm gì?
 
 - intent: Tu_van_dich_vu-Kham_online
   examples: |
-    - Bệnh viện có dịch vụ khám bệnh trực tuyến hay tại nhà không? 
+    - Khám online có được thực hiện qua video call không?
+    - Có cần tải ứng dụng đặc biệt để tham gia khám từ xa không?
+    - Tôi có thể hẹn lịch khám online vào thời gian nào?
+    - Chi phí khám online có khác biệt so với khám trực tiếp không?
+    - Có cần gửi tài liệu hoặc xét nghiệm trước khi khám từ xa không?
+    - Tôi có thể thay đổi hoặc hủy lịch khám online không?
+    - Dịch vụ khám online có hỗ trợ các chuyên khoa khác nhau không?
+    - Khám online có được tư vấn về đơn thuốc và điều trị không?
+    - Tôi có thể nhận kết quả khám online ngay lập tức không?
+    - Có yêu cầu đặc biệt nào về thiết bị hoặc kết nối internet khi khám online không?
+    - Khám online có bảo mật thông tin cá nhân và hồ sơ y tế không?
+    - Tôi có thể liên lạc với bác sĩ sau khi khám online nếu có thêm câu hỏi không?
+    - Dịch vụ khám online có được thực hiện vào cuối tuần không?
+    - Tôi có thể thanh toán phí khám online bằng các phương thức nào?
+    - Khám từ xa có thể điều chỉnh kế hoạch điều trị theo nhu cầu của tôi không?
+    - Có thể thực hiện khám online cho các bệnh lý cấp cứu không?
+    - Khám online có thể bao gồm các dịch vụ xét nghiệm hoặc chẩn đoán không?
+    - Có cần chuẩn bị gì đặc biệt cho buổi khám từ xa không?
+    - Khám online có được hỗ trợ thêm thông tin về thuốc và cách sử dụng không?
+    - Dịch vụ khám online có phù hợp với các bệnh nhân người già không?
 
 - intent: Quy_trinh-Gio_tham_benh
   examples: |
-    - Giờ thăm bệnh khoa Chấn thương chỉnh hình từ mấy giờ?
+    - Giờ thăm bệnh tại bệnh viện là từ mấy giờ đến mấy giờ?
+    - Có giờ thăm bệnh riêng cho các phòng bệnh khác nhau không?
+    - Tôi có thể thăm bệnh nhân vào cuối tuần không?
+    - Có quy định nào về số lượng khách thăm bệnh cùng một lúc không?
+    - Tôi cần đăng ký trước để thăm bệnh nhân không?
+    - Có cần mang theo giấy tờ gì khi đến thăm bệnh nhân không?
+    - Giờ thăm bệnh có thay đổi vào các ngày lễ không?
+    - Tôi có thể thăm bệnh nhân vào buổi tối không?
+    - Có quy định về thời gian thăm bệnh cho trẻ em không?
+    - Có những yêu cầu gì cần tuân thủ trong giờ thăm bệnh?
+    - Nếu tôi không thể thăm bệnh nhân trong giờ quy định, có cách nào để gặp bệnh nhân không?
+    - Có hạn chế gì về số lần thăm bệnh trong một ngày không?
+    - Giờ thăm bệnh có được cập nhật thường xuyên không?
+    - Tôi có thể gọi điện cho bệnh nhân trong giờ thăm bệnh không?
+    - Thời gian thăm bệnh có ảnh hưởng đến giờ điều trị của bệnh nhân không?
+    - Có quy định về trang phục khi đến thăm bệnh nhân không?
+    - Tôi có thể thăm bệnh nhân trong các giờ nghỉ trưa không?
+    - Có những quy định về việc sử dụng thiết bị điện tử trong giờ thăm bệnh không?
+    - Nếu bệnh nhân cần nghỉ ngơi, tôi có thể điều chỉnh giờ thăm không?
+    - Có quy định gì về việc thăm bệnh nhân tại khu vực chăm sóc đặc biệt không?
 
 - intent: Tu_van_dich_vu-Dia_chi
   examples: |
-    - Bệnh viện có bao nhiêu cơ sở?
+    - Địa chỉ của bệnh viện là gì?
+    - Làm thế nào để tôi tìm thấy bệnh viện?
+    - Bệnh viện có địa chỉ chính xác nào không?
+    - Có bản đồ chỉ đường đến bệnh viện không?
+    - Bệnh viện có địa chỉ liên hệ khẩn cấp nào không?
+    - Bệnh viện có mấy chi nhánh và địa chỉ của các chi nhánh là gì?
+    - Có điểm đỗ xe gần bệnh viện không?
+    - Địa chỉ của phòng khám thuộc bệnh viện là gì?
+    - Bệnh viện có địa chỉ cụ thể cho các khoa không?
+    - Có dịch vụ vận chuyển hoặc đưa đón bệnh nhân từ bệnh viện không?
+    - Địa chỉ của bệnh viện có dễ tìm không, có chỉ dẫn nào không?
+    - Bệnh viện có thể gửi cho tôi bản đồ đường đến bệnh viện không?
+    - Bệnh viện có thay đổi địa chỉ không?
+    - Tôi có thể tìm thấy thông tin địa chỉ của bệnh viện trên trang web nào?
+    - Bệnh viện có các cơ sở y tế khác không và địa chỉ của chúng là gì?
+    - Có số điện thoại hỗ trợ chỉ đường đến bệnh viện không?
+    - Bệnh viện có địa chỉ gửi thư và bưu phẩm không?
+    - Địa chỉ của các trung tâm chăm sóc đặc biệt trong bệnh viện là gì?
+    - Bệnh viện có bảng chỉ dẫn ngoài trời không?
+    - Địa chỉ của bệnh viện có thay đổi trong các thời gian lễ tết không?
 
 - intent: Tu_van_dich_vu-Co_so_vat_chat
   examples: |
-    - Mình muốn xem các loại giường thì xem ở đâu?
+    - Bệnh viện có trang thiết bị y tế hiện đại không?
+    - Các phòng bệnh có được trang bị đầy đủ tiện nghi không?
+    - Phòng mổ có được trang bị thiết bị tiên tiến không?
+    - Bệnh viện có khu vực cấp cứu được trang bị như thế nào?
+    - Có hệ thống điều hòa không khí trong các phòng bệnh không?
+    - Bệnh viện có phòng xét nghiệm được trang bị đầy đủ thiết bị không?
+    - Phòng chăm sóc đặc biệt có các thiết bị hỗ trợ nào?
+    - Có khu vực phục hồi chức năng được trang bị đầy đủ không?
+    - Các khu vực chung như phòng chờ và phòng đón tiếp có được thiết kế tiện nghi không?
+    - Hệ thống thông tin và quản lý bệnh viện có hiện đại không?
+    - Bệnh viện có hệ thống khử khuẩn và tiệt trùng hiệu quả không?
+    - Có khu vực riêng cho việc tiêm chủng và chăm sóc định kỳ không?
+    - Phòng dược có đầy đủ các loại thuốc và thiết bị cần thiết không?
+    - Có hệ thống quản lý chất thải y tế đảm bảo vệ sinh không?
+    - Phòng khám có được trang bị thiết bị chẩn đoán chính xác không?
+    - Có dịch vụ hỗ trợ bệnh nhân về cơ sở vật chất không?
+    - Các phòng bệnh có đầy đủ các tiện nghi cơ bản như nước nóng, internet không?
+    - Bệnh viện có khu vực đón tiếp và hỗ trợ bệnh nhân mới đến như thế nào?
+    - Có các biện pháp đảm bảo an toàn và vệ sinh trong cơ sở vật chất không?
+    - Bệnh viện có các khu vực đặc biệt như phòng y tế cộng đồng không?
 
 - intent: Tu_van_dich_vu-Thong_tin_suc_khoe
   examples: |
-    - Xem thông tin sức khỏe hữu ích?
+    - Tra cứu thông tin y tế hữu ích?
+    - tìm hiểu về kiến thức chăm sóc sức khỏe?
+    - khám phá thông tin y khoa hữu ích?
+    - Tin tức về sức khỏe?
+    - thông tin phòng bệnh?
+    - tìm kiếm dữ liệu y tế cần thiết?
+    - tiếp cận thông tin y tế hữu ích?
+    - tham khảo thông tin y tế hữu ích?
 
 - intent: Tu_van_dich_vu-Dang_ky_kham_benh
   examples: |
-    - Đăng ký khám bệnh?
+    - đặt lịch khám bệnh?
+    - đăng ký kiểm tra sức khỏe?
+    - ghi danh khám bệnh?
+    - đăng ký thăm khám bệnh?
+    - đặt hẹn khám bệnh?
+    - đăng ký gặp bác sĩ?
+    - đăng ký dịch vụ y tế?
+    - lập lịch khám sức khỏe?
+    - đăng ký tư vấn y tế?
+    - đăng ký chăm sóc y tế?
+    - đặt hẹn kiểm tra sức khỏe?
+    - đăng ký khám sức khỏe định kì?
+    - đăng ký kiểm tra y khoa?
+    - đăng ký dịch vụ khám bệnh?
+    - đăng ký khám bệnh tại bệnh viện?
+    - đăng ký kiểm tra sức khỏe tổng quát?
+    - đăng ký khám và điều trị?
+    - đăng ký dịch vụ kiểm tra sức khỏe định kỳ?
 
 - intent: Tu_van_dich_vu-Lich_kham__
   examples: |
-    - Lịch khám của Bệnh viện và Bác sĩ?
+    - thời gian khám bệnh tại Biện viện và với bác sĩ?
+    - Lịch hẹn khám bệnh tại bệnh viện và với bác sĩ?
+    - lịch thăm khám của bệnh viện và bác sĩ?
+    - lịch kiểm tra sức khỏe tại bệnh viện và bác sĩ?
+    - lịch khám bệnh của bệnh viện và bác sĩ?
+    - thời gian khám của bệnh viện và bác sĩ?
+    - lịch khám y tế tại bệnh viện và với bác sĩ?
+    - giờ làm việc của khoa khám bệnh?
+    - lịch trực của bác sĩ?
+    - bệnh viện làm việc từ mấy giờ đến mấy giờ?
+    - có thể đặt lịch khám ngoài giờ không?
 
 - intent: Tu_van_dich_vu-Cong_dong_nguoi_benh
   examples: |
     - Bệnh viện có các cộng đồng người bệnh nào?
+    - Bệnh viện có những cộng đồng bệnh nhân nào?
+    - Các nhóm người bệnh tại bệnh viện là gì?
+    - bệnh viện có các cộng đồng bệnh nhân nào?
+    - những cộng đồng người mắc bệnh nào có mặt tại bệnh viện?
+    - bệnh viện cung cấp các cộng đồng bệnh nhân nào?
+    - bệnh viện có những nhóm bệnh nhân nào?
+    - các cộng đồng người bị bệnh tại bệnh viện là gì?
+    - Bệnh viện có câu lạc bộ hỗ trợ bệnh nhân nào?
+    - Bệnh viện có nhóm chia sẻ kinh nghiệm điều trị bệnh nào?
+    - Bệnh viện có tổ chức các buổi gặp mặt cho người bệnh không?
+    - Bệnh viện có cộng đồng hỗ trợ bệnh nhân ung thư không?
+    - Bệnh viện có nhóm hỗ trợ bệnh nhân tiểu đường không?
+    - Bệnh viện có cộng đồng dành cho bệnh nhân tim mạch không?
+    - Bệnh viện có nhóm hỗ trợ bệnh nhân sau phẫu thuật không?
+    - Bệnh viện có các hoạt động dành cho người bệnh và người nhà không?
+    - Bệnh viện có các chương trình tư vấn và hỗ trợ tâm lý cho người bệnh không?
 
 - intent: Tu_van_dich_vu-Su_kien_Benh_vien
   examples: |
-    - Làm thế nào để tham gia các chương trình trực tiếp, hội thảo nhận quà và nghỉ phép?
+    - xin nghỉ phép?
+    - tham dự sự kiện trực tiếp?
+    - tham gia hội thảo và nhận quà?
+    - nghỉ làm?
+    - tham gia chương trình trực tiếp?
+    - tham gia hội thảo và nhận phần thưởng?
+    - được nghỉ phép?
+    - tham gia sự kiện trực tiếp?
+    - dự hội thảo và nhận quà?
+    - xin nghỉ làm?
+    - tham gia các chương trình trực tiếp?
+    - tham dự hội thảo và nhận quà tặng?
+    - nghỉ việc?
+    - tham gia chương trình trực tiếp?
+    - tham gia hội thảo nhận quà?
+    - nghỉ phép?
+    - tham gia các sự kiện trực tiếp?
+    - dự hội thảo và nhận phần thưởng?
+    - xin nghỉ phép?
+    - tham gia sự kiện trực tiếp?
+    - dự hội thảo và nhận quà?
+    - nghỉ việc?
+    - tham gia chương trình trực tiếp?
+    - tham dự hội thảo và nhận quà?
+    - xin phép nghỉ làm?
+    - tham gia sự kiện livestream?
+    - tham dự hội thảo online và nhận quà?
+    - xin nghỉ không lương?
+    - tham gia buổi phát sóng trực tiếp?
+    - tham gia webinar và nhận quà tặng?
+    - xin nghỉ ốm?
+    - tham gia sự kiện trực tuyến?
+    - tham dự workshop và nhận quà?
+    - xin nghỉ dưỡng sức?
+    - tham gia chương trình phát sóng trực tiếp?
+    - tham gia tọa đàm và nhận phần quà?
+    - xin nghỉ thai sản?
+    - tham gia buổi giao lưu trực tuyến?
+    - tham dự khóa học online và nhận quà?
+    - xin nghỉ hưu?
+    - tham gia chương trình truyền hình trực tiếp?
+    - tham gia hội nghị trực tuyến và nhận quà?
 

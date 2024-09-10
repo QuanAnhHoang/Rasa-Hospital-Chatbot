@@ -35,12 +35,12 @@ def extract_rasa_data(file_path):
         topic = remove_vietnamese_diacritics(str(row['Topic']))
 
         intent = f"{nhom}-{topic}".replace(" ", "_")
-        question = row['Câu hỏi']
+        question_list = [q.strip() for q in row['Câu hỏi'].split(';') if q.strip()]
         answer = row['Trả lời']
 
-        intents.append(intent)
-        questions.append(question)
-        answers.append(answer)
+        intents.extend([intent] * len(question_list))
+        questions.extend(question_list)
+        answers.extend([answer] * len(question_list))
 
     return intents, questions, answers
 
@@ -59,7 +59,7 @@ def update_nlu_yml(intents, questions, nlu_file="data/nlu.yml"):
     for intent, examples in intent_examples.items():
         nlu_entry = {
             'intent': intent,
-            'examples': '|\n    ' + '\n    '.join(f'- {example}' for example in examples)
+            'examples': '\n'.join(f"    - {example}" for example in examples)
         }
         nlu_data['nlu'].append(nlu_entry)
 
@@ -68,7 +68,7 @@ def update_nlu_yml(intents, questions, nlu_file="data/nlu.yml"):
         f.write("nlu:\n")
         for entry in nlu_data['nlu']:
             f.write(f"- intent: {entry['intent']}\n")
-            f.write(f"  examples: {entry['examples']}\n\n")
+            f.write(f"  examples: |\n{entry['examples']}\n\n")
 
 def update_domain_yml(intents, answers, domain_file="domain.yml"):
     domain = {
@@ -94,7 +94,7 @@ def update_domain_yml(intents, answers, domain_file="domain.yml"):
 
     # Write to file
     with open(domain_file, 'w', encoding='utf-8') as f:
-        f.write("version: " + domain['version'] + "\n\n")
+        f.write(f"version: {domain['version']}\n\n")
         
         f.write("intents:\n")
         for intent in domain['intents']:
